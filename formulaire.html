@@ -6,5 +6,98 @@
 </head>
 <body>
 
+<div id="wrapper">
+    <main>
+        <h1>Formulaire d'inscription</h1>
+        <form>
+
+            <!--Liste de genre-->
+
+            <label for="homme">Homme</label>
+            <input type="radio" id="homme" name="genre" autofocus  value="homme" checked>
+            <label for="femme">Femme</label>
+            <input type="radio" name="genre" id="femme" value="femme">
+
+            <br>
+
+            <!--Inscrire Nom-->
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required placeholder="Entrer votre nom" >
+
+            <br>
+
+            <!--Inscrire Prenom-->
+
+            <label for="prenom">Prenom</label>
+            <input type="text" id="prenom" name="prenom" required placeholder="Entrer votre prénom" >
+
+            <br>
+
+            <!--Inscrire Age-->
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" min="16" max="100" required>
+
+            <br>
+
+            <!--Bouton a cocher-->
+            <span>*Quel est le meilleur moment pour vous joindre?</span>
+            <label for="avant-midi">AVANT-MIDI</label>
+            <input type="checkbox" id="avant-midi" name="avant-midi"/>
+            <label for="apres-midi">APRÈS-MIDI</label>
+            <input type="checkbox" id="apres-midi" name="après-midi"/>
+            <label for="soiree">SOIRÉE</label>
+            <input type="checkbox" id="soiree" name="soiree"/>
+
+            <br>
+
+            <!--Inscrire Courriel-->
+            <label for="email">Courriel</label>
+            <input type="email"  id="email" name="email" required placeholder="adresse@email.com" >
+
+            <br>
+
+            <!--Inscrire Telephone-->
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="tel" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
+
+            <br>
+            <!--Section Commentaire-->
+
+            <label for="commentaire"> Commentaire ?</label>
+            <textarea id="commentaire" rows="4" cols="50"></textarea>
+
+            <br>
+
+            <!--Liste d'option predefinie-->
+
+            <label for="Choix_dentrainement">Choix d'entrainement.</label>
+            <input list="entrainements" type="text" id="Choix_dentrainement" required>
+            <datalist id="entrainements">
+                <option>Perte de poid</option>
+                <option>Musculation</option>
+                <option>Remise en forme</option>
+            </datalist>
+
+            <br>
+            <!--Bouton submit-->
+            <input type="submit" >
+        </form>
+
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+
+
+</div>
+
+
+
 </body>
 </html>
