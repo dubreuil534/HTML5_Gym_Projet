@@ -310,6 +310,10 @@ label[for*="apres-midi"]{
 label[for*="soiree"]{
     width: 15%;
 }
+#inscription {
+    height: 30%;
+
+}
 
 
 
