@@ -100,7 +100,7 @@ main section:nth-of-type(2){
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 main section:nth-of-type(3){
-    height: 200px;
+    height: 150px;
     margin-top: 2%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b0d4e3+0,88bacf+100;Grey+3D+%233 */
     background: #b0d4e3; /* Old browsers */
@@ -112,17 +112,17 @@ main section:nth-of-type(3){
 main section p{
     display: inline-block;
     width: calc(80%/2);
-    height: 200px;
+    height: 150px;
     vertical-align: top;
     text-align: center;
     margin: 0 auto;
-    background-color: red;
+   /* background-color: red;*/
 }
 
 main section span{
     margin-right: 5%;
     vertical-align: top;
-    line-height:  200px;
+    line-height:  150px;
     font-size: x-large;
     font-family: Georgia;
     -moz-text-shadow: 2px 2px white;
@@ -132,14 +132,17 @@ main section span{
      text-shadow: 2px 2px white;
 }
 main section img{
-   vertical-align: top;
-    padding-top: 1%;
+width: 65px;
+}
+main section button{
+  vertical-align: top;
+  margin-top: 8%;
 }
 main section p:last-of-type{
    vertical-align: top;
     line-height: 25px;
-    padding-top: 5%;
-    padding-left: 25%;
+    padding-top: 3%;
+    padding-left: 20%;
     font-family: Georgia;
 }
 main section article h4{
