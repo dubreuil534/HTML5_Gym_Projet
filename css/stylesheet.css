@@ -274,15 +274,17 @@ footer p{
 
 /********** FORMULAIRE **********************************/
 
-/*#wrapper-form main {
+#wrapper-form main {
     width: 100%;
     height: 100%;
 }
+
 
 #wrapper-form label {
     display: inline-block;
     width: 25% ;
 }
+
 
 fieldset ul li{
     width: 45%;
@@ -293,14 +295,18 @@ fieldset ul li{
 
 }
 
-input {
+
+#wrapper input {
     margin-left: 2%;
     text-align: left;
 }
 
+
+
 fieldset ul li:nth-child(5){
     width: 100%;
 }
+
 
 
 fieldset ul li:nth-child(6){
@@ -324,14 +330,18 @@ fieldset ul li:nth-child(10){
     width: 100%;
 }
 
+
+
 fieldset ul{
     -webkit-padding-start: 0px;
 }
 
-span{
+
+#wrapper-form span{
     display: block;
     margin-bottom: 2%;
 }
+
 
 button {
     margin-right: 5%;
@@ -341,10 +351,11 @@ button {
     display: inline-block;
 }
 
-form{
+#wrapper-form form{
     width: 50%;
     display: inline-block;
     margin-left: 5%;
+    margin-top: 2%;
 }
 
 article{
@@ -375,7 +386,7 @@ label[for*="apres-midi"]{
 
 label[for*="soiree"]{
     width: 15%;
-}*/
+}
 
 
 
