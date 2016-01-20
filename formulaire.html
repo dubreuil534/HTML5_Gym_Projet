@@ -37,7 +37,7 @@
 
                 <!--Inscrire Nom-->
 <li>
-                <label for="nom">Nom</label>
+                <label for="nom">Nom:</label>
                 <input type="text" id="nom" name="nom" required placeholder="Entrer votre nom" >
 
 
@@ -45,7 +45,7 @@
                 <!--Inscrire Prenom-->
                     <li>
 
-                <label for="prenom">Prenom</label>
+                <label for="prenom">Prénom:</label>
                 <input type="text" id="prenom" name="prenom" required placeholder="Entrer votre prénom" >
 
                 </li>
@@ -53,7 +53,7 @@
 
                 <!--Inscrire Telephone-->
                     <li>
-                <label for="tel">Téléphone</label>
+                <label for="tel">Téléphone:</label>
                 <input type="tel" id="tel" name="tel" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
                     </li>
 
@@ -62,7 +62,7 @@
                 <!--Inscrire Courriel-->
                     <li>
 
-                <label for="email">Courriel</label>
+                <label for="email">Courriel:</label>
                 <input type="email"  id="email" name="email" required placeholder="adresse@email.com" >
 
                     </li>
@@ -84,7 +84,7 @@
                     <li>
 
             <label for="age">Age (16 ans min)</label>
-            <input type="number" id="age" name="age" min="16" max="100" required>
+            <input type="number" id="age" name="age" min="16" max="100" placeholder="Age" required>
 
                     </li>
 
@@ -120,19 +120,18 @@
 
             <!--Section Commentaire-->
                     <li>
-
-            <label for="commentaire"> Commentaire ?</label>
+            <span>*Commentaire ?</span>
             <textarea id="commentaire" rows="4" cols="50"></textarea>
                     </li>
 
                 <!--Bouton effacement-->
                     <li>
-                <button type="reset" value="Reset">Effacer</button>
+                <button class="button" type="reset" value="Reset">Effacer</button>
 
 
 
             <!--Bouton submit-->
-            <button type="submit" value="Reset">S'inscrire</button>
+            <button class="button" type="submit" value="Reset">S'inscrire</button>
                     </li>
                 </ul>
             </fieldset>
