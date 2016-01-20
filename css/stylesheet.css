@@ -174,7 +174,14 @@ li{
 
 fieldset ul li:nth-child(5){
     width: 400px;
+    margin-left: 15%;
 }
+
+fieldset ul li:nth-child(6){
+    margin-left: 15%;
+}
+
+
 fieldset ul li:nth-child(7){
     width: 400px;
 }
