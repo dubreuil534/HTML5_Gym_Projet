@@ -27,10 +27,32 @@
 
 </header>
 
-<div id="wrapper">
+<div id="wrapper-form">
     <main>
-        <h1>Formulaire d'inscription</h1>
         <form>
+            <fieldset>
+                <legend>Contactez-Nous</legend>
+
+                <!--Inscrire Nom-->
+
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required placeholder="Entrer votre nom" >
+
+
+                <!--Inscrire Prenom-->
+
+                <label for="prenom">Prenom</label>
+                <input type="text" id="prenom" name="prenom" required placeholder="Entrer votre prénom" >
+
+                <!--Inscrire Telephone-->
+
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
+
+                <!--Inscrire Courriel-->
+
+                <label for="email">Courriel</label>
+                <input type="email"  id="email" name="email" required placeholder="adresse@email.com" >
 
             <!--Liste de genre-->
 
@@ -39,28 +61,12 @@
             <label for="femme">Femme</label>
             <input type="radio" name="genre" id="femme" value="femme">
 
-            <br>
-
-            <!--Inscrire Nom-->
-
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" required placeholder="Entrer votre nom" >
-
-            <br>
-
-            <!--Inscrire Prenom-->
-
-            <label for="prenom">Prenom</label>
-            <input type="text" id="prenom" name="prenom" required placeholder="Entrer votre prénom" >
-
-            <br>
 
             <!--Inscrire Age-->
 
             <label for="age">Age (16 ans min)</label>
             <input type="number" id="age" name="age" min="16" max="100" required>
 
-            <br>
 
             <!--Bouton a cocher-->
 
@@ -74,39 +80,31 @@
 
             <br>
 
-            <!--Inscrire Courriel-->
+                <!--Liste d'option predefinie-->
 
-            <label for="email">Courriel</label>
-            <input type="email"  id="email" name="email" required placeholder="adresse@email.com" >
-
-            <br>
-
-            <!--Inscrire Telephone-->
-
-            <label for="tel">Téléphone</label>
-            <input type="tel" id="tel" name="tel" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
+                <label for="Choix_dentrainement">*Choisir un centre</label>
+                <input list="entrainements" type="text" id="Choix_dentrainement" placeholder="Selectionner votre centre" required>
+                <datalist id="entrainements">
+                    <option>Mascouche</option>
+                    <option>Laval</option>
+                    <option>Sherbrooke</option>
+                </datalist>
 
             <br>
+
             <!--Section Commentaire-->
 
             <label for="commentaire"> Commentaire ?</label>
             <textarea id="commentaire" rows="4" cols="50"></textarea>
 
             <br>
+                <!--Bouton effacement-->
+                <button type="reset" value="Reset">Effacer</button>
 
-            <!--Liste d'option predefinie-->
 
-            <label for="Choix_dentrainement">*Choisir un centre</label>
-            <input list="entrainements" type="text" id="Choix_dentrainement" placeholder="Selectionner votre centre" required>
-            <datalist id="entrainements">
-                <option>Mascouche</option>
-                <option>Laval</option>
-                <option>Sherbrooke</option>
-            </datalist>
-
-            <br>
             <!--Bouton submit-->
-            <input type="submit" >
+            <button type="submit" value="Reset">S'inscrire</button>
+            </fieldset>
         </form>
 
 
