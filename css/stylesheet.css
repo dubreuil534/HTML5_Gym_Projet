@@ -120,10 +120,18 @@ p{
     width: 50%;
 }
 
-label
-{
 
-    width: 150px;
+
+label:nth-of-type(2n){
+    margin-left: 5%;
+
+}
+
+li{
+    width: 200px;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 2%;
 }
 
 

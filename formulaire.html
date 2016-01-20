@@ -33,42 +33,64 @@
             <fieldset>
                 <legend>Contactez-Nous</legend>
 
-                <!--Inscrire Nom-->
+                <ul>
 
+                <!--Inscrire Nom-->
+<li>
                 <label for="nom">Nom</label>
                 <input type="text" id="nom" name="nom" required placeholder="Entrer votre nom" >
 
 
+
                 <!--Inscrire Prenom-->
+                    <li>
 
                 <label for="prenom">Prenom</label>
                 <input type="text" id="prenom" name="prenom" required placeholder="Entrer votre prénom" >
 
-                <!--Inscrire Telephone-->
+                </li>
 
+
+                <!--Inscrire Telephone-->
+                    <li>
                 <label for="tel">Téléphone</label>
                 <input type="tel" id="tel" name="tel" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
+                    </li>
+
+
 
                 <!--Inscrire Courriel-->
+                    <li>
 
                 <label for="email">Courriel</label>
                 <input type="email"  id="email" name="email" required placeholder="adresse@email.com" >
 
+                    </li>
+
+
             <!--Liste de genre-->
+
+                    <li>
 
             <label for="homme">Homme</label>
             <input type="radio" id="homme" name="genre" autofocus  value="homme" checked>
             <label for="femme">Femme</label>
             <input type="radio" name="genre" id="femme" value="femme">
 
+                    </li>
 
             <!--Inscrire Age-->
+
+                    <li>
 
             <label for="age">Age (16 ans min)</label>
             <input type="number" id="age" name="age" min="16" max="100" required>
 
+                    </li>
 
             <!--Bouton a cocher-->
+
+                    <li>
 
             <span>*Quel est le meilleur moment pour vous joindre?</span>
             <label for="avant-midi">AVANT-MIDI</label>
@@ -78,9 +100,12 @@
             <label for="soiree">SOIRÉE</label>
             <input type="checkbox" id="soiree" name="soiree"/>
 
-            <br>
+                    </li>
+
 
                 <!--Liste d'option predefinie-->
+
+                    <li>
 
                 <label for="Choix_dentrainement">*Choisir un centre</label>
                 <input list="entrainements" type="text" id="Choix_dentrainement" placeholder="Selectionner votre centre" required>
@@ -90,20 +115,23 @@
                     <option>Sherbrooke</option>
                 </datalist>
 
-            <br>
+                    </li>
+
 
             <!--Section Commentaire-->
+                    <li>
 
             <label for="commentaire"> Commentaire ?</label>
             <textarea id="commentaire" rows="4" cols="50"></textarea>
+                    </li>
 
-            <br>
                 <!--Bouton effacement-->
                 <button type="reset" value="Reset">Effacer</button>
 
 
             <!--Bouton submit-->
             <button type="submit" value="Reset">S'inscrire</button>
+                </ul>
             </fieldset>
         </form>
 
