@@ -7,7 +7,7 @@ aside, div, section, header, footer, nav {
 /*degradé du fond du body*/
 
 body{
-
+font-family: "Arial", Arial, sans-serif;
     margin: 0 auto;
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
@@ -27,14 +27,35 @@ main{
 /****** HEADER *****************/
 #logo{
     width: 10%;
+    margin: 10px;
 }
 
 nav ul{
     list-style: none;
-    display: inline-block;
 }
 
+nav li {
+    float: left;
+    margin-right: 20px;
+}
 
+nav {
+    display: inline-block;
+    padding-bottom: 50px;
+}
+
+header p a{
+    color: red;
+}
+
+#header-right {
+    display: inline-block;
+    float: right;
+}
+
+#header-right p {
+    margin-left: 163px;
+}
 
 /****END HEADER *******************/
 
@@ -127,7 +148,7 @@ a:link {
     color:grey;
 }
 
-p{
+footer p{
     color: white;
     text-align: center;
 }
