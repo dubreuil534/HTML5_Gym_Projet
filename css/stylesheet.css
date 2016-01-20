@@ -68,17 +68,22 @@ section:nth-of-type(3){
 
 footer {
     background-color: black;
+    height: 20%;
 }
 
 .subtitle {
     color: white;
     font-size: 24px;
 
+
 }
 
 .contact {
     display:inline-block;
     width: 25%;
+    vertical-align: top;
+    float: left;
+    margin-left: 10%;
 
 }
 
@@ -86,6 +91,7 @@ footer {
 
     display:inline-block;
     width: 25%;
+    text-align: center;
 
 }
 
@@ -93,6 +99,8 @@ footer {
 
     display:inline-block;
     width: 25%;
+    vertical-align: top;
+    float: right;
 
 }
 
@@ -101,6 +109,11 @@ a:visited {
 }
 a:link {
     color:grey;
+}
+
+p{
+    color: white;
+    text-align: center;
 }
 
 
