@@ -5,6 +5,18 @@
     <title>Formulaire</title>
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css"/>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        function initialize() {
+            var mapProp = {
+                center:new google.maps.LatLng(51.508742,-0.120850),
+                zoom:5,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 <body>
 <header>
@@ -136,6 +148,18 @@
                 </ul>
             </fieldset>
         </form>
+
+        <div id="googleMapdiv">
+            <h2>Notre location</h2>
+            <div id="googleMap" style="width:450px;height:300px;"></div>
+            <h5>Gym International</h5>
+            <h5>1000 rue crémazie</h5>
+            <h6>Tel:819-888-888</h6>
+            <h6>Fax:819-888-888</h6>
+            <h6>Courriel:email@email.com</h6>
+
+
+        </div>
 
 
     </main>
