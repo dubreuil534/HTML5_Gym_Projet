@@ -287,6 +287,30 @@ article{
     display: inline-block;
 }
 
+label[for*="age"]{
+    width: 5%;
+}
+
+label[for*="homme"]{
+    width: 10%;
+}
+
+label[for*="femme"]{
+    width: 10%;
+}
+
+label[for*="avant-midi"]{
+    width: 15%;
+}
+label[for*="apres-midi"]{
+    width: 15%;
+}
+
+label[for*="soiree"]{
+    width: 15%;
+}
+
+
 
 
 

@@ -9,8 +9,8 @@
     <script>
         function initialize() {
             var mapProp = {
-                center:new google.maps.LatLng(51.508742,-0.120850),
-                zoom:5,
+                center:new google.maps.LatLng(45.5440953,-73.6424363),
+                zoom:15,
                 mapTypeId:google.maps.MapTypeId.ROADMAP
             };
             var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
@@ -84,7 +84,7 @@
 
                     <li>
             <span>Votre Genre:</span>
-            <label for="homme">Homme</label>
+            <label  for="homme">Homme</label>
             <input type="radio" id="homme" name="genre" autofocus  value="homme" checked>
             <label for="femme">Femme</label>
             <input type="radio" name="genre" id="femme" value="femme">
@@ -95,8 +95,8 @@
 
                     <li>
 
-            <label for="age">Age (16 ans min)</label>
-            <input type="number" id="age" name="age" min="16" max="100" placeholder="Age" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="16" max="100" placeholder="(16 min)" required>
 
                     </li>
 
