@@ -279,7 +279,7 @@ footer p{
     height: 100%;
 }
 
-label {
+#wrapper-form label {
     display: inline-block;
     width: 25% ;
 }
