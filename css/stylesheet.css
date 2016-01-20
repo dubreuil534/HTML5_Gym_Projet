@@ -61,16 +61,16 @@ header p a{
 
 /* debut css des articles de la 1ère section de l'index*/
 
-section article{
+main section article{
     width: calc(90%/4);
     display: inline-block;
     text-align: center;
     margin-left: 1.5%;
 }
-article:first-of-type{
+main section article:first-of-type{
     margin: 0;
 }
-section article img{
+main section article img{
     width: 300px;
     height: 220px;
     -moz-box-shadow: 5px 5px 5px LightBlue;
@@ -82,7 +82,7 @@ section article img{
 
 /*css de la section 1 et 2 de l'index*/
 
-section:nth-of-type(2){
+main section:nth-of-type(2){
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
     background: #cedce7; /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #cedce7 0%, #596a72 100%); /* FF3.6-15 */
@@ -90,7 +90,7 @@ section:nth-of-type(2){
     background: radial-gradient(ellipse at center, #cedce7 0%,#596a72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-section:nth-of-type(3){
+main section:nth-of-type(3){
     height: 200px;
     margin-top: 5%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b0d4e3+0,88bacf+100;Grey+3D+%233 */
@@ -151,6 +151,16 @@ a:link {
 footer p{
     color: white;
     text-align: center;
+}
+
+#wrapper-form main {
+    width: 50%;
+}
+
+label
+{
+
+    width: 150px;
 }
 
 
