@@ -271,7 +271,9 @@ footer p{
     text-align: center;
 }
 
-#wrapper-form main {
+/********** FORMULAIRE **********************************/
+
+/*#wrapper-form main {
     width: 100%;
     height: 100%;
 }
@@ -372,7 +374,7 @@ label[for*="apres-midi"]{
 
 label[for*="soiree"]{
     width: 15%;
-}
+}*/
 
 
 
