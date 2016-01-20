@@ -155,6 +155,7 @@ footer p{
 
 #wrapper-form main {
     width: 50%;
+    height: 100%;
 }
 
 
@@ -170,5 +171,25 @@ li{
     margin-left: 5%;
     margin-top: 2%;
 }
+
+fieldset ul li:nth-child(5){
+    width: 400px;
+}
+fieldset ul li:nth-child(7){
+    width: 400px;
+}
+
+fieldset ul li:nth-child(8){
+    width: 400px;
+}
+fieldset ul li:nth-child(9){
+    width: 400px;
+}
+
+
+
+
+
+
 
 
