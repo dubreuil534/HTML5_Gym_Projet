@@ -4,6 +4,7 @@
 aside, div, section, header, footer, nav {
     display: block;
 }
+/*degradé du fond du body*/
 
 body{
 
@@ -21,14 +22,16 @@ main{
     margin: 0;
     padding: 0;
 }
+/* debut css des articles de la 1ère section de l'index*/
+
 section article{
     width: calc(90%/4);
     display: inline-block;
     text-align: center;
-    margin-left: 2%;
+    margin-left: 1.5%;
 }
 article:first-of-type{
-    margin: 0%;
+    margin: 0;
 }
 section article img{
     width: 300px;
@@ -38,6 +41,10 @@ section article img{
     box-shadow: 5px 5px 5px LightBlue;
     border: 1px solid black;
 }
+/*fin du css des article de la 1ère section de l'index*/
+
+/*css de la section 1 et 2 de l'index*/
+
 section:nth-of-type(2){
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedce7+0,596a72+100;Grey+3D+%231 */
     background: #cedce7; /* Old browsers */
@@ -56,23 +63,7 @@ section:nth-of-type(3){
     background: radial-gradient(ellipse at center, #b0d4e3 0%,#88bacf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0d4e3', endColorstr='#88bacf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-figure img{
-    width: 40%;
-    height: 40%;
-}
-section p,figure,button{
-    display: inline-block;
-}
-section p:first-of-type{
-    font-size: x-large;
-    margin-left: 2%;
-    margin-right: 2%;
-    -moz-text-shadow: 1px 1px white;
-    -webkit-text-shadow: 1px 1px white;
-    -ms-text-shadow: 1px 1px white;
-    -o-text-shadow: 1px 1px white;
-    text-shadow: 1px 1px white;
-}
+
 
 footer {
     background-color: black;
