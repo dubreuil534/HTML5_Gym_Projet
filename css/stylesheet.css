@@ -122,24 +122,33 @@ header a {
 
 /****END HEADER *******************/
 
+/***** DEBUT DE L'INDEX *******/
+
 /* debut css des articles de la 1ère section de l'index*/
 
 main section article{
-    width: calc(90%/4);
+    width: calc(98%/4);
     display: inline-block;
     text-align: center;
-    margin-left: 1.5%;
+    vertical-align: top;
 }
 main section article:first-of-type{
     margin: 0;
 }
 main section article img{
-    width: 300px;
-    height: 220px;
+    width: 100%;
+    height: 200px;
+    /*ombre externe sur les images*/
     -moz-box-shadow: 5px 5px 5px LightBlue;
     -webkit-box-shadow: 5px 5px 5px LightBlue;
     box-shadow: 5px 5px 5px LightBlue;
     border: 1px solid black;
+   /*arrondie sur les images*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+     border-radius: 5px;
 }
 /*fin du css des article de la 1ère section de l'index*/
 
@@ -155,7 +164,7 @@ main section:nth-of-type(2){
 }
 main section:nth-of-type(3){
     height: 200px;
-    margin-top: 5%;
+    margin-top: 2%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b0d4e3+0,88bacf+100;Grey+3D+%233 */
     background: #b0d4e3; /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #b0d4e3 0%, #88bacf 100%); /* FF3.6-15 */
@@ -163,8 +172,54 @@ main section:nth-of-type(3){
     background: radial-gradient(ellipse at center, #b0d4e3 0%,#88bacf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0d4e3', endColorstr='#88bacf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+main section p{
+    display: inline-block;
+    width: calc(90%/2);
+    height: 200px;
+    vertical-align: top;
+    text-align: center;
+    margin: 0 auto;
+    background-color: red;
+}
 
-/*fin du css des sections de l'index*/
+main section span{
+    margin-right: 5%;
+    vertical-align: top;
+    line-height:  200px;
+    font-size: x-large;
+    font-family: Georgia;
+    -moz-text-shadow: 2px 2px white;
+    -webkit-text-shadow: 2px 2px white;
+    -ms-text-shadow: 2px 2px white;
+    -o-text-shadow: 2px 2px white;
+     text-shadow: 2px 2px white;
+}
+main section p img{
+   vertical-align: top;
+}
+main section p:last-of-type{
+   vertical-align: top;
+    line-height: 25px;
+    padding-top: 5%;
+    padding-left: 25%;
+    font-family: Georgia;
+}
+main section article h4{
+    -moz-text-shadow: 1px 1px white;
+    -webkit-text-shadow: 1px 1px white;
+    -ms-text-shadow: 1px 1px white;
+    -o-text-shadow: 1px 2px white;
+    text-shadow: 1px 1px white;
+}
+main section article h4:hover{
+    color: blue;
+    transform: scale(2);
+    transition: all 2s ease;
+}
+
+
+/*******FIN DE L'INDEX******/
+
 
 footer {
     background-color: black;
@@ -217,13 +272,114 @@ footer p{
 }
 
 #wrapper-form main {
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    display: inline-block;
+    width: 25% ;
+}
+
+fieldset ul li{
+    width: 45%;
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    text-align: center;
+
+}
+
+input {
+    margin-left: 2%;
+    text-align: left;
+}
+
+fieldset ul li:nth-child(5){
+    width: 100%;
+}
+
+
+fieldset ul li:nth-child(6){
+    width: 100%;
+}
+
+
+fieldset ul li:nth-child(7){
+    width: 100%;
+
+}
+
+fieldset ul li:nth-child(8){
+    width: 100%;
+}
+fieldset ul li:nth-child(9){
+    width: 100%;
+}
+
+fieldset ul li:nth-child(10){
+    width: 100%;
+}
+
+fieldset ul{
+    -webkit-padding-start: 0px;
+}
+
+span{
+    display: block;
+    margin-bottom: 2%;
+}
+
+button {
+    margin-right: 5%;
+}
+
+#googleMap {
+    display: inline-block;
+}
+
+form{
     width: 50%;
+    display: inline-block;
+    margin-left: 5%;
 }
 
-label
-{
-
-    width: 150px;
+article{
+    display: inline-block;
 }
+#googleMapdiv{
+    display: inline-block;
+}
+
+label[for*="age"]{
+    width: 5%;
+}
+
+label[for*="homme"]{
+    width: 10%;
+}
+
+label[for*="femme"]{
+    width: 10%;
+}
+
+label[for*="avant-midi"]{
+    width: 15%;
+}
+label[for*="apres-midi"]{
+    width: 15%;
+}
+
+label[for*="soiree"]{
+    width: 15%;
+}
+
+
+
+
+
+
+
+
 
 
