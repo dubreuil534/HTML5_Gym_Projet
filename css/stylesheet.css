@@ -174,7 +174,7 @@ main section:nth-of-type(3){
 }
 main section p{
     display: inline-block;
-    width: calc(90%/2);
+    width: calc(80%/2);
     height: 200px;
     vertical-align: top;
     text-align: center;
@@ -194,8 +194,9 @@ main section span{
     -o-text-shadow: 2px 2px white;
      text-shadow: 2px 2px white;
 }
-main section p img{
+main section img{
    vertical-align: top;
+    padding-top: 1%;
 }
 main section p:last-of-type{
    vertical-align: top;
