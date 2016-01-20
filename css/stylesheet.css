@@ -22,6 +22,22 @@ main{
     margin: 0;
     padding: 0;
 }
+
+
+/****** HEADER *****************/
+#logo{
+    width: 10%;
+}
+
+nav ul{
+    list-style: none;
+    display: inline-block;
+}
+
+
+
+/****END HEADER *******************/
+
 /* debut css des articles de la 1ère section de l'index*/
 
 section article{
