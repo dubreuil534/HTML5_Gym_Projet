@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title> LIMBO </title>
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title> Galerie </title>
     <link rel="stylesheet" href="css/stylesheet.css"/>
 </head>
-<body>
-
-
-<!--*****************ELEMENT ANIMATION****************************-->
-<!--<a href="formulaire.html"><img src="images/fittest_icon.png" alt="logo" class="element-animation" style="width: 5%"></a>-->
-
+<main>
 <header>
-
-
     <a href="index.html"><img src="images/logogym2.gif" alt="logo" id="logo"></a><!-------------
            --->
     <nav>
@@ -25,64 +17,71 @@
             <li><a href="formulaire.html"> Contact </a></li>
         </ul>
 
-    </nav><!-------------------------
-            -->
+    </nav>
+    <!-------------------------
+                -->
     <div id="header-right">
         <p id="lang"><span><a href="#">Eng</a></span>/<span><a href="#">Fr</a></span></p>
+
         <form><input type="search" placeholder="Recherche"/>
             <button type="button"> OK</button>
         </form>
         <div id="coordonees">
-            <p id="tel">tel: 514 515 1146 935 </p> <p>Rue de la Gauchetière O. Montréal H3B 2M9</p>
+            <p id="tel">tel: 514 515 1146 935 </p>
+
+            <p>Rue de la Gauchetière O. Montréal H3B 2M9</p>
 
 
         </div>
     </div>
 
+
 </header>
+<!--contenu-->
 
-<main>
-    <section>
-        <h2> Slider </h2>
+<main id="galerie">
 
-    </section>
+    <h2> GALERIE LIMBO </h2>
 
-    <section>
-        <article>
-            <h4> NOS GYMS </h4>
-            <figure> <img src="images/gyms.JPG" alt="gyms"></figure>
-        </article>
+    <ul class="row">
+        <li>
+            <img src="images/galerie/0.jpg" alt="img0" class="col-3">
+        </li>
+        <li>
+            <img src="images/galerie/1.jpg" alt="img1" class="col-3" >
+        </li>
+        <li>
+            <img src="images/galerie/2.jpg" alt="img2" class="col-3" >
+        </li>
+        <li>
+            <img src="images/galerie/3.jpg" alt="img3" class="col-3" >
+        </li>
+        <li>
+            <img src="images/galerie/4.jpg" alt="img4" class="col-3" >
+        </li>
+        <li>
+            <img src="images/galerie/5.jpg" alt="img5" class="col-3" >
+        </li>
+        <li>
+            <img src="images/galerie/6.jpg" alt="img6" class="col-3" >
+        </li>
+        <li>
+            <img src="images/galerie/7.jpg" alt="img7" class="col-3" >
+        </li>
+        <li>
+            <img src="images/galerie/8.jpg" alt="img8" class="col-3" >
+        </li>
+        <li>
+            <img src="images/galerie/9.jpg" alt="img9" class="col-3" >
+        </li>
+        <li>
+            <img src="images/galerie/10.jpg" alt="img10" class="col-3" >
+        </li>
+        <li>
+            <img src="images/galerie/11.jpg" alt="img11" class="col-3" >
+        </li>
 
-        <article>
-            <h4> NOTRE ÉQUIPE </h4>
-            <figure> <img src="images/notre%20equipe.png" alt="equipe"> </figure>
-        </article>
-
-        <article>
-            <h4> ENTRAÎNEMENT PRIVÉ </h4>
-            <figure> <img src="images/services.jpg" alt="service"> </figure>
-        </article>
-
-        <article>
-            <h4> BOUTIQUE </h4>
-            <figure> <img src="images/magazine.jpg" alt="boutique"> </figure>
-        </article>
-
-    </section>
-
-    <section>
-
-        <p> <span> EN SAVOIR PLUS! </span>   </p>
-        <button type="button" onclick="myFunction()" > CONTACTEZ NOUS! </button>
-        <script>
-            function myFunction() {
-                window.location.assign('formulaire.html');
-            }
-        </script>
-        <img src="images/trainer.png" alt="training">
-        <p> Inscrivez-vous rapidement <br> et courez la chance de gagner <br> un abonnement de 3 mois </p>
-
-    </section>
+    </ul>
 
 </main>
 
@@ -121,8 +120,10 @@
     </ul>
     <p>© Copyright Gym 2016. Tous droits réservés. Gym est une marque déposée. - Gym inc.
         est une compagnie du P68 ISI Montreal .</p>
+
     <p><a href="index.html">Haut de page</a></p>
 </footer>
+
 
 </body>
 </html>
