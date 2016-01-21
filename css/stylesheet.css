@@ -391,6 +391,23 @@ label[for*="soiree"]{
     width: 15%;
 }
 
+/********* CSS Training ***************/
+
+.centervideo  {
+    width: 400px;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.sectionvideo{
+    display: inline-block;
+    text-align: center;
+}
+
+.videoscategories{
+    margin-left: 2%;
+}
+
 
 
 
