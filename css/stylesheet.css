@@ -394,18 +394,44 @@ label[for*="soiree"]{
 /********* CSS Training ***************/
 
 .centervideo  {
-    width: 400px;
+    width: 50%;
     margin-left: 2%;
     margin-top: 2%;
+    text-align: center;
 }
 
 .sectionvideo{
     display: inline-block;
     text-align: center;
+    border: solid black;
+    width: 48%;
+    margin: 1%;
 }
 
 .videoscategories{
     margin-left: 2%;
+    margin-right: 2%;
+    width: 50%;
+    display: inline-block;
+}
+
+.top_populaire p{
+    display: inline-block;
+    vertical-align: top;
+
+
+}
+
+.top_populaire img{
+    width: 20%;
+    height: 20%;
+
+}
+
+.topcategories{
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 
