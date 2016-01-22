@@ -434,7 +434,6 @@ main section article h4:hover {
     margin-top: 2%;
     margin-bottom: 2%;
 }
-
 /*conteneur des images du carousel*/
 #slider #slider-container{
     width: 6000px;
@@ -450,8 +449,6 @@ main section article h4:hover {
     height:400px;
     display: inline-block;
 }
-
-
 /*on définit l'animation via plusieurs keyframes*/
 @keyframes slidy{
 
