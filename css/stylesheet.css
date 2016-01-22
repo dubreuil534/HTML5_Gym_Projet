@@ -172,6 +172,7 @@ h1,h2,h3,h4,h5,h6{
 aside, div, section, header, footer, nav {
     display: block;
 }
+
 /*degradé de fond du body*/
 
 /*degradé du fond du body*/
@@ -196,10 +197,30 @@ main {
 }
 
 /****** HEADER *****************/
+/* unvisited link */
+ header a:link {
+    color: #000000;
+}
+
+/* visited link */
+header a:visited {
+    color: #000000;
+}
+
+/* mouse over link */
+header a:hover {
+    color: #000000;
+}
+
+/* selected link */
+header a:active {
+    color: #000000;
+}
 header {
     font-family: 'comfortaaregular';
     letter-spacing: 1px;
     width: 100%;
+    height: 10%;
     border-bottom: 1px solid black;;
 }
 
@@ -235,9 +256,8 @@ nav li:hover {
 nav {
     display: inline-block;
     vertical-align: top;
-    padding-top: 30px;
-    padding-left: 30px;
-    width: 50%;
+    width: 56%;
+    height: 150px;
 }
 
 header a {
@@ -248,42 +268,37 @@ header div {
     display: inline-block;
     width: 38%;
     text-align: right;
-    vertical-align: bottom;
+    vertical-align: top;
     padding-bottom: 4px;
-}
-
-header div div {
-    display: inline-block;
-    padding-top: 10px;
-}
-
-header div div p {
-    display: inline-block;
-    margin-left: 35px;
-    padding-right: 5px;
-
+    padding-right: 20px;
 }
 
 header input {
-    margin-right: 20px;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 7px;
     font-family: 'comfortaaregular';
 }
 
-header button {
+header form img {
+    border-radius: 7px;
     margin: 0;
-    font-family: 'comfortaaregular';
+    width: 20px;
 }
 
 header div div p:last-of-type {
-    padding: 10px;
-    height: 10px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-align: center;
+    margin: 0;
     -webkit-transition: height 2s linear; /* For Safari 3.1 to 6.0 */
     transition: width 2s linear;
     position: absolute;
-    top: 69px;
-    left: 840px;
+    top: 120px;
+    left: 370px;
     z-index: 0;
-    transition-property: width, height;
+    transition-property: height;
     transition-duration: 0.5s;
     transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
 }
@@ -299,8 +314,14 @@ header div div p:last-of-type:hover {
     height: 400px;
     width: 480px;
     z-index: 100;
-
 }
+
+@media only screen and (max-width: 1200px) {
+    header div div p:last-of-type {
+        width: 550px;
+    }
+}
+
 
 /****END HEADER *******************/
 
@@ -347,7 +368,8 @@ main section:nth-of-type(2) {
     background: radial-gradient(ellipse at center, #cedce7 0%, #596a72 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cedce7', endColorstr='#596a72', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 }
-main section:nth-of-type(3){
+
+main section:nth-of-type(3) {
     height: 150px;
     margin-top: 2%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b0d4e3+0,88bacf+100;Grey+3D+%233 */
@@ -360,39 +382,41 @@ main section:nth-of-type(3){
 
 main section p {
     display: inline-block;
-    width: calc(80%/2);
+    width: calc(80% / 2);
     height: 150px;
     vertical-align: top;
     text-align: center;
     margin: 0 auto;
-   /* background-color: red;*/
+    /* background-color: red;*/
 }
 
 main section span {
     margin-right: 2%;
     vertical-align: top;
-    line-height:  150px;
+    line-height: 150px;
     font-size: x-large;
-  /*  font-family: Georgia;*/
+    /*  font-family: Georgia;*/
     -moz-text-shadow: 2px 2px white;
     -webkit-text-shadow: 2px 2px white;
     -ms-text-shadow: 2px 2px white;
     -o-text-shadow: 2px 2px white;
     text-shadow: 2px 2px white;
 }
-main section img{
-width: 65px;
+
+main section img {
+    width: 65px;
 }
-main section button{
-  vertical-align: top;
-   margin-top: 3.5%;
+
+main section button {
+    vertical-align: top;
+    margin-top: 3.5%;
     padding-top: 1%;
     padding-bottom: 1%;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
-    border-radius:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
 }
 
 main section p:last-of-type {
@@ -480,30 +504,32 @@ main section article h4:hover {
 
 /*******DEBUT GALERIE******/
 
-#galerie{
-   margin-left: 1%;
-   margin-top: 2%;
+#galerie {
+    margin-left: 1%;
+    margin-top: 2%;
 }
-#galerie h2{
+
+#galerie h2 {
     text-align: center;
 }
-#galerie h2:hover{
+
+#galerie h2:hover {
     color: blue;
     transform: scale(2);
-   /* transform: translate(100px);*/
+    /* transform: translate(100px);*/
     transition: all 2s ease;
 }
 
-#galerie ul{
+#galerie ul {
     list-style: none;
 }
 
-#galerie ul li img{
- width: 320px;
- height: 220px ;
-  margin-top: 1%;
-  margin-left: 1%;
-  border: 1px solid black ;
+#galerie ul li img {
+    width: 320px;
+    height: 220px;
+    margin-top: 1%;
+    margin-left: 1%;
+    border: 1px solid black;
     -moz-box-shadow: 5px 5px 5px gray;
     -webkit-box-shadow: 5px 5px 5px gray;
     box-shadow: 5px 5px 5px gray;
@@ -515,73 +541,93 @@ main section article h4:hover {
     border-radius: 5px;
 
 }
-#galerie ul li img:hover{
-    transform: scale(2);
-    transition: all 5s ease-in;
+
+#galerie ul li img:hover {
+    transform: scale(1.5);
+    transition: all 1s ease-in;
 }
-#galerie ul li{
+
+#galerie ul li {
     margin: 0 auto;
 }
 
 /*largeur d'1 colonne pour desktop*/
 
-.col-1{
-    width:8.33%;
+.col-1 {
+    width: 8.33%;
 }
+
 /*largeur de 2 colonnes pour desktop*/
-.col-2{
-    width:16.66%;
+.col-2 {
+    width: 16.66%;
 }
+
 /*largeur de 3 colonnes pour desktop*/
-.col-3 {width: 25%;}
+.col-3 {
+    width: 25%;
+}
 
 /*largeur de 4 colonnes pour desktop*/
-.col-4 {width: 33.33%;}
+.col-4 {
+    width: 33.33%;
+}
 
 /*largeur de 5 colonnes pour desktop*/
-.col-5 {width: 41.66%;}
+.col-5 {
+    width: 41.66%;
+}
 
 /*largeur de 6 colonnes pour desktop*/
-.col-6 {width: 50%;}
+.col-6 {
+    width: 50%;
+}
 
 /*largeur de 7 colonnes pour desktop*/
-.col-7 {width: 58.33%;}
+.col-7 {
+    width: 58.33%;
+}
 
 /*largeur de 8 colonnes pour desktop*/
-.col-8 {width: 66.66%;}
+.col-8 {
+    width: 66.66%;
+}
 
 /*largeur de 9 colonnes pour desktop*/
-.col-9 {width: 75%;}
+.col-9 {
+    width: 75%;
+}
 
 /*largeur de 10 colonnes pour desktop*/
-.col-10{
-    width:83.33%;
+.col-10 {
+    width: 83.33%;
 }
 
 /*largeur de 11 colonnes pour desktop*/
-.col-11{
-    width:91.66%;
+.col-11 {
+    width: 91.66%;
 }
 
 /*largeur de 12 colonnes pour desktop*/
-.col-12{
-    width:100%;
+.col-12 {
+    width: 100%;
 }
 
-[class*="col-"]{
+[class*="col-"] {
     float: left;
     padding: 0 15px;
 
 }
 
-.row:after{
-    content:""; /*on crée un espace vide*/
-    clear:both; /*on annule l'effet de float*/
-    display:block; /*cela permet d'avoir un retour à la ligne*/
+.row:after {
+    content: ""; /*on crée un espace vide*/
+    clear: both; /*on annule l'effet de float*/
+    display: block; /*cela permet d'avoir un retour à la ligne*/
 
 }
 
 /*******FIN GALERIE******/
+/*******DEBUT FOOTER******/
+
 
 footer {
     background-color: black;
@@ -633,6 +679,8 @@ footer p {
     text-align: center;
 }
 
+/*******FIN FOOTER******/
+
 /********** FORMULAIRE **********************************/
 
 #wrapper-form main {
@@ -643,11 +691,28 @@ footer p {
 
 #wrapper-form label {
     display: inline-block;
-    width: 25% ;
+    width: 23% ;
+}
+#wrapper-form span {
+    font-family: 'comfortaabold';
+}
+
+#wrapper-form input {
+    border-radius: 5px;
 }
 
 
-fieldset ul li{
+fieldset{
+    background-color:#CCC;
+    border-radius: 5px;
+}
+
+fieldset legend{
+    font-size: x-large;
+    font-family: 'comfortaabold';
+}
+
+fieldset ul li {
     width: 45%;
     display: inline-block;
     margin-top: 2%;
@@ -663,42 +728,15 @@ fieldset ul li{
 }
 
 
-
-fieldset ul li:nth-child(5){
+fieldset ul li:nth-child(n+5){
     width: 100%;
 }
-
-
-
-fieldset ul li:nth-child(6){
-    width: 100%;
-}
-
-
-fieldset ul li:nth-child(7){
-    width: 100%;
-
-}
-
-fieldset ul li:nth-child(8){
-    width: 100%;
-}
-fieldset ul li:nth-child(9){
-    width: 100%;
-}
-
-fieldset ul li:nth-child(10){
-    width: 100%;
-}
-
-
 
 fieldset ul{
     -webkit-padding-start: 0px;
 }
 
-
-#wrapper-form span{
+#wrapper-form span {
     display: block;
     margin-bottom: 2%;
 }
@@ -712,92 +750,95 @@ button {
     display: inline-block;
 }
 
-#wrapper-form form{
+#wrapper-form form {
     width: 50%;
     display: inline-block;
     margin-left: 5%;
     margin-top: 2%;
 }
 
-article{
-    display: inline-block;
-}
-#googleMapdiv{
+article {
     display: inline-block;
 }
 
-label[for*="age"]{
-    width: 5%;
+#googleMapdiv {
+    display: inline-block;
 }
 
-label[for*="homme"]{
+#wrapper-form label[for*="age"]{
     width: 10%;
 }
 
-label[for*="femme"]{
+#wrapper-form label[for*="homme"]{
     width: 10%;
 }
 
-label[for*="avant-midi"]{
+#wrapper-form label[for*="femme"]{
+    width: 10%;
+}
+
+#wrapper-form label[for*="avant-midi"]{
     width: 15%;
 }
-label[for*="apres-midi"]{
+#wrapper-form label[for*="apres-midi"]{
     width: 15%;
 }
 
-label[for*="soiree"]{
+#wrapper-form label[for*="soiree"]{
     width: 15%;
 }
 
 /********* CSS Training ***************/
 
-.centervideo  {
+.centervideo {
     width: 100%;
-    margin-left: 6%;
+    margin-left: 5%;
     margin-top: 2%;
 }
 
-.sectionvideo{
+.sectionvideo {
     display: inline-block;
     text-align: center;
     border: solid black;
-    width: 35%;
+    width: 47%;
     margin: 1%;
 }
 
-.videoscategories{
+.videoscategories {
     margin-left: 5%;
     width: 70%;
     display: inline-block;
 
 }
 
-.top_populaire p{
+.top_populaire p {
     display: inline-block;
     vertical-align: top;
 
-
 }
 
-.top_populaire img{
+.top_populaire img {
     width: 20%;
     height: 20%;
 
 }
 
-.topcategories{
+.topcategories {
     width: 20%;
     display: inline-block;
     vertical-align: top;
+    margin-top: 5%;
 }
-
-
+.centervideo img {
+    margin-left: 1%;
+    width: 25%;
+}
 
 /******************* BOUTIQUE **********************************/
 
 #boutique {
     width: 90%;
-    border: 1 px solid black;
+    border: 1px solid black;
     background-color: white;
     margin-left: 5%;
     margin-right: 5%;
@@ -805,11 +846,11 @@ label[for*="soiree"]{
 }
 
 #boutique img {
-   padding: 10px;
+    padding: 10px;
     height: 150px;
 }
 
-#boutique> div>div>div{
+#boutique > div > div > div {
     color: green;
     width: 300px;
     height: 384px;
@@ -818,15 +859,13 @@ label[for*="soiree"]{
     background-color: white;
 }
 
-
-
 /******************* PRODUIT**********************************/
 
 #produit {
     width: 90%;
-    border: 1 px solid black;
+    border: 1px solid black;
     background-color: white;
-   margin-left: 5%;
+    margin-left: 5%;
     margin-right: 5%;
     font-family: 'comfortaaregular';
     letter-spacing: 0.5px;
@@ -837,35 +876,39 @@ label[for*="soiree"]{
     padding-top: 40px;
 }
 
-#produit h3{
+#produit h3 {
     font-size: 30px;
+}
+
+#produit > div > div:first-of-type h3 {
+    color: #551a8b;
 }
 
 #produit div {
     display: inline-block;
     box-sizing: border-box;
-    width: 68%;
+    width: 60%;
     vertical-align: top;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
-
+#produit strong {
+    font-size: 13px;
+}
 
 #produit div div:first-of-type {
     display: inline-block;
     width: 90%;
 }
 
-
-
-#produit div div:last-of-type>h3 {
+#produit div div:last-of-type > h3 {
     display: inline;
     width: 50px;
 }
 
-#produit div div:last-of-type>h2 {
+#produit div div:last-of-type > h2 {
     display: inline;
     width: 50px;
     margin-left: 30px;
@@ -875,20 +918,34 @@ label[for*="soiree"]{
 #produit table {
     /*line-height: normal;*/
     border-collapse: collapse;
-    width: 70%;
+
+    width: 80%;
     margin-left: 15%;
     margin-right: 15%;
 }
 
 #produit table tr td {
-    border: 1px solid black;
+    /* border: 1px solid black;*/
+    border-radius: 20px;
+    font-size: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-#produit table tr:last-of-type{
+#produit table tr:last-of-type {
     line-height: 150%;
 }
 
-#produit tr th {
+#produit th {
     padding: 10px;
+    color: #551a8b;
+    background-color: white;
 }
 
+#produit tr:nth-child(odd):hover {
+    background: lightgray;
+}
+
+#produit tr:nth-child(even):hover {
+    background: lightblue;
+}
