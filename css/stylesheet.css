@@ -444,9 +444,7 @@ main section article h4:hover {
 #galerie ul{
     list-style: none;
 }
-/*#galerie div {
-    z-index: 100;
-}*/
+
 #galerie ul li img{
  width: 320px;
  height: 220px ;
