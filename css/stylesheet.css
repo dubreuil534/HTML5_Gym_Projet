@@ -794,17 +794,19 @@ article {
 }
 
 #boutique img {
-    padding: 10px;
     height: 150px;
 }
 
-#boutique > div > div > div {
-    color: green;
-    width: 300px;
+/*#boutique > div > div > div*/
+.products{
+    background-color: lightpink;
+    width: 20%;
+    margin: 2.33%;
+    padding: 20px;
     height: 384px;
     display: inline-block;
     border: 1px solid black;
-    background-color: white;
+    /*background-color: white;*/
 }
 
 /******************* PRODUIT**********************************/
