@@ -9,11 +9,11 @@
     <script>
         function initialize() {
             var mapProp = {
-                center:new google.maps.LatLng(45.5440953,-73.6424363),
-                zoom:15,
-                mapTypeId:google.maps.MapTypeId.ROADMAP
+                center: new google.maps.LatLng(45.5440953, -73.6424363),
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
         }
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
@@ -32,24 +32,22 @@
             <li><a href="formulaire.html"> Contact </a></li>
         </ul>
 
-    </nav><!-------------------------
-            -->
+    </nav>
+    <!-------------------------
+                -->
     <div>
         <p id="lang"><span><a href="#">Eng</a></span>/<span><a href="#">Fr</a></span></p>
+
         <form><input type="search" placeholder="Recherche"/>
             <button type="button"> OK</button>
         </form>
         <div>
-            <p id="tel">tel: 514 515 1146 935 </p>
+            <p>tel: 514 515 1146 935 </p>
+
             <p>Rue de la Gauchetière O. Montréal H3B 2M9</p>
-
-
         </div>
     </div>
-
-
 </header>
-
 <div id="wrapper-form">
     <main>
         <form>
@@ -58,103 +56,102 @@
 
                 <ul>
 
-                <!--Inscrire Nom-->
-<li>
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" required placeholder="Entrer votre nom" >
+                    <!--Inscrire Nom-->
+                    <li>
+                        <label for="nom">Nom:</label>
+                        <input type="text" id="nom" name="nom" required placeholder="Entrer votre nom">
 
 
-
-                <!--Inscrire Prenom-->
+                        <!--Inscrire Prenom-->
                     <li>
 
-                <label for="prenom">Prénom:</label>
-                <input type="text" id="prenom" name="prenom" required placeholder="Entrer votre prénom" >
-
-                </li>
-
-
-                <!--Inscrire Telephone-->
-                    <li>
-                <label for="tel">Téléphone:</label>
-                <input type="tel" id="tel" name="tel" required placeholder="123-123-1234" pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
-                    </li>
-
-
-
-                <!--Inscrire Courriel-->
-                    <li>
-
-                <label for="email">Courriel:</label>
-                <input type="email"  id="email" name="email" required placeholder="adresse@email.com" >
+                        <label for="prenom">Prénom:</label>
+                        <input type="text" id="prenom" name="prenom" required placeholder="Entrer votre prénom">
 
                     </li>
 
 
-            <!--Liste de genre-->
-
+                    <!--Inscrire Telephone-->
                     <li>
-            <span>Votre Genre:</span>
-            <label  for="homme">Homme</label>
-            <input type="radio" id="homme" name="genre" autofocus  value="homme" checked>
-            <label for="femme">Femme</label>
-            <input type="radio" name="genre" id="femme" value="femme">
-
+                        <label for="tel">Téléphone:</label>
+                        <input type="tel" id="tel" name="tel" required placeholder="123-123-1234"
+                               pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
                     </li>
 
-            <!--Inscrire Age-->
 
+                    <!--Inscrire Courriel-->
                     <li>
 
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="16" max="100" placeholder="(16 min)" required>
-
-                    </li>
-
-            <!--Bouton a cocher-->
-
-                    <li>
-
-            <span>*Quel est le meilleur moment pour vous joindre?</span>
-            <label for="avant-midi">AVANT-MIDI</label>
-            <input type="checkbox" id="avant-midi" name="avant-midi"/>
-            <label for="apres-midi">APRÈS-MIDI</label>
-            <input type="checkbox" id="apres-midi" name="après-midi"/>
-            <label for="soiree">SOIRÉE</label>
-            <input type="checkbox" id="soiree" name="soiree"/>
+                        <label for="email">Courriel:</label>
+                        <input type="email" id="email" name="email" required placeholder="adresse@email.com">
 
                     </li>
 
 
-                <!--Liste d'option predefinie-->
+                    <!--Liste de genre-->
+
+                    <li>
+                        <span>Votre Genre:</span>
+                        <label for="homme">Homme</label>
+                        <input type="radio" id="homme" name="genre" autofocus value="homme" checked>
+                        <label for="femme">Femme</label>
+                        <input type="radio" name="genre" id="femme" value="femme">
+
+                    </li>
+
+                    <!--Inscrire Age-->
 
                     <li>
 
-                <label for="Choix_dentrainement">*Choisir un centre</label>
-                <input list="entrainements" type="text" id="Choix_dentrainement" placeholder="Selectionner votre centre" required>
-                <datalist id="entrainements">
-                    <option>Mascouche</option>
-                    <option>Laval</option>
-                    <option>Sherbrooke</option>
-                </datalist>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="16" max="100" placeholder="(16 min)" required>
+
+                    </li>
+
+                    <!--Bouton a cocher-->
+
+                    <li>
+
+                        <span>*Quel est le meilleur moment pour vous joindre?</span>
+                        <label for="avant-midi">AVANT-MIDI</label>
+                        <input type="checkbox" id="avant-midi" name="avant-midi"/>
+                        <label for="apres-midi">APRÈS-MIDI</label>
+                        <input type="checkbox" id="apres-midi" name="après-midi"/>
+                        <label for="soiree">SOIRÉE</label>
+                        <input type="checkbox" id="soiree" name="soiree"/>
 
                     </li>
 
 
-            <!--Section Commentaire-->
+                    <!--Liste d'option predefinie-->
+
                     <li>
-            <span>*Commentaire ?</span>
-            <textarea id="commentaire" rows="4" cols="50"></textarea>
+
+                        <label for="Choix_dentrainement">*Choisir un centre</label>
+                        <input list="entrainements" type="text" id="Choix_dentrainement"
+                               placeholder="Selectionner votre centre" required>
+                        <datalist id="entrainements">
+                            <option>Mascouche</option>
+                            <option>Laval</option>
+                            <option>Sherbrooke</option>
+                        </datalist>
+
                     </li>
 
-                <!--Bouton effacement-->
+
+                    <!--Section Commentaire-->
                     <li>
-                <button class="button" type="reset" value="Reset">Effacer</button>
+                        <span>*Commentaire ?</span>
+                        <textarea id="commentaire" rows="4" cols="50"></textarea>
+                    </li>
+
+                    <!--Bouton effacement-->
+                    <li>
+                        <button class="button" type="reset" value="Reset">Effacer</button>
 
 
-
-            <!--Bouton submit-->
-            <button class="button" type="submit" value="Reset">S'inscrire</button>
+                        <!--Bouton submit-->
+                        <button class="button" type="submit" value="Reset">S'inscrire</button>
                     </li>
                 </ul>
             </fieldset>
@@ -162,6 +159,7 @@
 
         <div id="googleMapdiv">
             <h2>Notre location</h2>
+
             <div id="googleMap" style="width:450px;height:300px;"></div>
             <h5>Gym International</h5>
             <h5>1000 rue crémazie</h5>
@@ -177,45 +175,45 @@
 
     <footer>
 
-            <ul>
+        <ul>
 
-                <li class="contact">
-                    <h3 class="subtitle">Vous avez des suggestions ?</h3>
-                    <ul>
-                        <li><a href="formulaire.html" target="_blank">Contactez-nous</a></li>
-                        <li><a href="#">Aide/FAQ</a></li>
-                        <li><a href="#">Publicite et partenariat</a></li>
-                    </ul>
+            <li class="contact">
+                <h3 class="subtitle">Vous avez des suggestions ?</h3>
+                <ul>
+                    <li><a href="formulaire.html" target="_blank">Contactez-nous</a></li>
+                    <li><a href="#">Aide/FAQ</a></li>
+                    <li><a href="#">Publicite et partenariat</a></li>
+                </ul>
 
-                </li>
-                <li class="explorer">
-                    <h3 class="subtitle">Explorez</h3>
-                    <ul>
-                        <li><a href="#"> Galerie </a></li>
-                        <li><a href="training.html"> Training </a></li>
-                        <li><a href="Boutique.html"> Boutique </a></li>
-                        <li><a href="formulaire.html"> Contact </a></li>
-                    </ul>
+            </li>
+            <li class="explorer">
+                <h3 class="subtitle">Explorez</h3>
+                <ul>
+                    <li><a href="#"> Galerie </a></li>
+                    <li><a href="training.html"> Training </a></li>
+                    <li><a href="Boutique.html"> Boutique </a></li>
+                    <li><a href="formulaire.html"> Contact </a></li>
+                </ul>
 
-                </li>
-                <li class="media_sociaux">
-                    <h3 class="subtitle">Suivez-nous sur</h3>
-                    <ul>
-                        <li><a href="https://www.facebook.com/">Facebook</a></li>
-                        <li><a href="https://twitter.com/">Twitter</a></li>
-                        <li><a href="https://plus.google.com">Google Plus</a></li>
-                    </ul>
+            </li>
+            <li class="media_sociaux">
+                <h3 class="subtitle">Suivez-nous sur</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://plus.google.com">Google Plus</a></li>
+                </ul>
 
-                </li>
-            </ul>
-            <p>© Copyright Limbo Gym 2016. Tous droits réservés.  Limbo Gym est une marque déposée. -  Limbo Gym inc.
-                est une compagnie du P68 ISI Montreal .</p>
+            </li>
+        </ul>
+        <p>© Copyright Limbo Gym 2016. Tous droits réservés. Limbo Gym est une marque déposée. - Limbo Gym inc.
+            est une compagnie du P68 ISI Montreal .</p>
+
         <p><a href="index.html">Haut de page</a></p>
     </footer>
 
 
 </div>
-
 
 
 </body>

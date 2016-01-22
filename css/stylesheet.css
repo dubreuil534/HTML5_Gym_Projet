@@ -529,6 +529,8 @@ main section article h4:hover {
 }
 
 /*******FIN GALERIE******/
+/*******DEBUT FOOTER******/
+
 
 footer {
     background-color: black;
@@ -580,6 +582,8 @@ footer p {
     text-align: center;
 }
 
+/*******FIN FOOTER******/
+
 /********** FORMULAIRE **********************************/
 
 #wrapper-form main {
@@ -590,7 +594,26 @@ footer p {
 
 #wrapper-form label {
     display: inline-block;
-    width: 25% ;
+    width: 23% ;
+    font-family: 'comfortaabold';
+}
+#wrapper-form span {
+    font-family: 'comfortaabold';
+}
+
+#wrapper-form input {
+    border-radius: 5px;
+}
+
+
+fieldset{
+    background-color:#CCC;
+    border-radius: 5px;
+}
+
+fieldset legend{
+    font-size: x-large;
+    font-family: 'comfortaabold';
 }
 
 
@@ -610,35 +633,9 @@ fieldset ul li{
 }
 
 
-
-fieldset ul li:nth-child(5){
+fieldset ul li:nth-child(n+5){
     width: 100%;
 }
-
-
-
-fieldset ul li:nth-child(6){
-    width: 100%;
-}
-
-
-fieldset ul li:nth-child(7){
-    width: 100%;
-
-}
-
-fieldset ul li:nth-child(8){
-    width: 100%;
-}
-fieldset ul li:nth-child(9){
-    width: 100%;
-}
-
-fieldset ul li:nth-child(10){
-    width: 100%;
-}
-
-
 
 fieldset ul{
     -webkit-padding-start: 0px;
@@ -673,26 +670,26 @@ article{
     display: inline-block;
 }
 
-label[for*="age"]{
-    width: 5%;
-}
-
-label[for*="homme"]{
+#wrapper-form label[for*="age"]{
     width: 10%;
 }
 
-label[for*="femme"]{
+#wrapper-form label[for*="homme"]{
     width: 10%;
 }
 
-label[for*="avant-midi"]{
+#wrapper-form label[for*="femme"]{
+    width: 10%;
+}
+
+#wrapper-form label[for*="avant-midi"]{
     width: 15%;
 }
-label[for*="apres-midi"]{
+#wrapper-form label[for*="apres-midi"]{
     width: 15%;
 }
 
-label[for*="soiree"]{
+#wrapper-form label[for*="soiree"]{
     width: 15%;
 }
 
