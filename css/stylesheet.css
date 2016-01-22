@@ -462,7 +462,7 @@ main section article h4:hover {
     box-shadow: 10px 10px 10px gray;
     border: 1px solid black;
     /*arrondie sur les images*/
-    -webkit-border-radius: 10px;
+    -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
