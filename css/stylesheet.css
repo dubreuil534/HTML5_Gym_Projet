@@ -268,7 +268,7 @@ header a {
 header div {
     display: inline-block;
     width: 300px;
-    float: right;
+    margin-left: 10%;
     text-align: right;
     vertical-align: top;
     padding-bottom: 4px;
@@ -744,12 +744,24 @@ article {
     margin-top: 2%;
 }
 
+.centervideo h2 {
+
+}
+.centervideo h2:hover {
+    color: blue;
+    transform: scale(1.5, 2);
+    transition: all 2s ease;
+}
+
+
 .sectionvideo {
     display: inline-block;
     text-align: center;
     border: solid black;
     width: 47%;
     margin: 1%;
+    box-shadow: 5px 5px 5px LightBlue;
+
 }
 
 .videoscategories {
