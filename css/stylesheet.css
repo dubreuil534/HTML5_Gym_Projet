@@ -419,15 +419,45 @@ main section article h4:hover {
 /*******DEBUT GALERIE******/
 
 #galerie{
-   margin-left: 3%;
+   margin-left: 1%;
+   margin-top: 2%;
 }
+#galerie h2{
+    text-align: center;
+}
+#galerie h2:hover{
+    color: blue;
+    transform: scale(2);
+   /* transform: translate(100px);*/
+    transition: all 2s ease;
+}
+
 #galerie ul{
     list-style: none;
 }
+/*#galerie div {
+    z-index: 100;
+}*/
 #galerie ul li img{
  width: 320px;
  height: 220px ;
-    margin-top: 1%;
+  margin-top: 1%;
+  margin-left: 1%;
+  border: 1px solid black ;
+    -moz-box-shadow: 5px 5px 5px gray;
+    -webkit-box-shadow: 5px 5px 5px gray;
+    box-shadow: 5px 5px 5px gray;
+    /*arrondie sur les images*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+
+}
+#galerie ul li img:hover{
+    transform: scale(2);
+    transition: all 5s ease-in;
 }
 #galerie ul li{
     margin: 0 auto;
