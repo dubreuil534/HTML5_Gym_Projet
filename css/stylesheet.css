@@ -178,8 +178,8 @@ aside, div, section, header, footer, nav {
 /*degradé du fond du body*/
 
 body {
-
-    font-family: "Arial", Arial, sans-serif;
+    font-family: 'comfortaaregular';
+    /*font-family: "Arial", Arial, sans-serif;*/
     font-size: 15px;
     margin: 0 auto;
 
@@ -237,7 +237,7 @@ nav ul {
 
 nav li {
     float: left;
-    margin-right: 30px;
+    margin-right: 2%;
     font-size: 20px;
     padding: 10px;
     border: 1px solid #d7d7d7;
@@ -264,17 +264,22 @@ header a {
     text-decoration: none;
 }
 
-header div {
+header div:first-of-type {
     display: inline-block;
     width: 300px;
-    float: right;
     text-align: right;
     vertical-align: top;
-    padding-bottom: 4px;
     padding-right: 20px;
+    float: right;
 }
 
-header input {
+header div:last-of-type {
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-align: center;
+    margin: 0;
+
+header div:first-of-type input {
     width: 200px;
     text-align: center;
     padding-top: 10px;
@@ -282,18 +287,19 @@ header input {
     font-family: 'comfortaaregular';
 }
 
-header form img {
+
+header div:first-of-type form img {
     border-radius: 7px;
     margin: 0;
     width: 20px;
 }
 
-header div div p:last-of-type {
+/*header div div p:last-of-type {
     letter-spacing: 3px;
     word-spacing: 5px;
     text-align: center;
-    margin: 0;
-    -webkit-transition: height 2s linear; /* For Safari 3.1 to 6.0 */
+    margin: 0;*/
+    /*-webkit-transition: height 2s linear; !* For Safari 3.1 to 6.0 *!
     transition: width 2s linear;
     position: absolute;
     top: 120px;
@@ -301,9 +307,9 @@ header div div p:last-of-type {
     z-index: 0;
     transition-property: height;
     transition-duration: 0.5s;
-    transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);*/
 }
-
+/*
 header div div p:last-of-type:hover {
     border: 1px solid black;
     background-image: url("../images/Capture.JPG");
@@ -315,7 +321,7 @@ header div div p:last-of-type:hover {
     height: 400px;
     width: 480px;
     z-index: 100;
-}
+}*/
 
 @media only screen and (max-width: 1200px) {
     header div div p:last-of-type {
@@ -839,35 +845,102 @@ article {
 
 #boutique {
     width: 90%;
-    border: 1px solid black;
-    background-color: white;
     margin-left: 5%;
     margin-right: 5%;
+}
 
+#boutique>div h2 {
+    padding-left: 30px;
+    padding-top: 20px;
 }
 
 #boutique img {
-    height: 150px;
+    /*height: 150px;*/
+    width: 65%;
 }
 
 /*#boutique > div > div > div*/
 .products{
-    background-color: lightpink;
+    background-color: white;
     width: 20%;
-    margin: 2.33%;
-    padding: 20px;
-    height: 384px;
+    margin: 0 2.33% 2.33% 2.33%;
+text-align: center;
+    padding: 20px ;
+    height: 300px;
     display: inline-block;
-    border: 1px solid black;
-    /*background-color: white;*/
+    border-radius: 7px;
+   /* border: 1px solid black;*/
+}
+
+.products:hover{
+    transform: scale(1.4);
+    transition: all 0.5s ease-in;
+}
+
+.products p,.products h3 {
+    text-align: left;
+    margin: 10px 0 10px 0;
+}
+
+.products p {
+    font-size: 12px;
+}
+
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+@-moz-keyframes scroll {
+    0% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -moz-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}
+
+.marquee {
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    padding-top: 20px;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 20s infinite linear;
+    -moz-animation: scroll 20s infinite linear;
+    animation: scroll 20s infinite linear;
 }
 
 /******************* PRODUIT**********************************/
 
 #produit {
     width: 90%;
-    border: 1px solid black;
-    background-color: white;
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'comfortaaregular';
@@ -875,9 +948,6 @@ article {
     line-height: 200%;
 }
 
-#produit img {
-    padding-top: 40px;
-}
 
 #produit h3 {
     font-size: 30px;
@@ -885,6 +955,14 @@ article {
 
 #produit > div > div:first-of-type h3 {
     color: #551a8b;
+}
+
+#produit>div:first-of-type {
+    background-color: white;
+    width: 32%;
+    border-radius: 20px;
+    padding-top: 20px;
+    margin: 45px 40px 0 20px;
 }
 
 #produit div {
@@ -942,7 +1020,10 @@ article {
 #produit th {
     padding: 10px;
     color: #551a8b;
-    background-color: white;
+}
+
+#produit th:hover{
+
 }
 
 #produit tr:nth-child(odd):hover {
