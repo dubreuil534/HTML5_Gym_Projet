@@ -266,7 +266,8 @@ header a {
 
 header div {
     display: inline-block;
-    width: 38%;
+    width: 300px;
+    float: right;
     text-align: right;
     vertical-align: top;
     padding-bottom: 4px;
