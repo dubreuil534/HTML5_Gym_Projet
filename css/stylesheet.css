@@ -195,6 +195,25 @@ main {
 }
 
 /****** HEADER *****************/
+/* unvisited link */
+ header a:link {
+    color: #000000;
+}
+
+/* visited link */
+header a:visited {
+    color: #000000;
+}
+
+/* mouse over link */
+header a:hover {
+    color: #000000;
+}
+
+/* selected link */
+header a:active {
+    color: #000000;
+}
 header {
     font-family: 'comfortaaregular';
     letter-spacing: 1px;
@@ -595,7 +614,6 @@ footer p {
 #wrapper-form label {
     display: inline-block;
     width: 23% ;
-    font-family: 'comfortaabold';
 }
 #wrapper-form span {
     font-family: 'comfortaabold';
