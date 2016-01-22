@@ -700,7 +700,7 @@ label[for*="soiree"]{
 
 .centervideo  {
     width: 100%;
-    margin-left: 6%;
+    margin-left: 5%;
     margin-top: 2%;
 }
 
@@ -708,7 +708,7 @@ label[for*="soiree"]{
     display: inline-block;
     text-align: center;
     border: solid black;
-    width: 35%;
+    width: 47%;
     margin: 1%;
 }
 
@@ -736,6 +736,11 @@ label[for*="soiree"]{
     width: 20%;
     display: inline-block;
     vertical-align: top;
+    margin-top: 5%;
+}
+.centervideo img {
+    margin-left: 1%;
+    width: 25%;
 }
 
 
