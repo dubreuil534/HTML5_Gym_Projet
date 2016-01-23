@@ -993,9 +993,9 @@ text-align: center;
     color: #551a8b;
 }
 
-#produit th:hover{
+/*#produit th:hover{
 
-}
+}*/
 
 #produit tr:nth-child(odd):hover {
     background: lightgray;
