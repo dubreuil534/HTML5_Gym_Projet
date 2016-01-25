@@ -53,23 +53,23 @@
 
                     <!--Inscrire Nom-->
                     <li>
-                        <label for="nom">Nom:</label>
-                        <input type="text" id="nom" name="nom" required placeholder="Entrer votre nom">
+                        <label for="nom">*Nom:</label>
+                        <input type="text" id="nom" name="nom" autofocus required placeholder="Entrer votre nom" title="Ajouter une nom valide!!!">
 
 
                         <!--Inscrire Prenom-->
                     <li>
 
-                        <label for="prenom">Prénom:</label>
-                        <input type="text" id="prenom" name="prenom" required placeholder="Entrer votre prénom">
+                        <label for="prenom">*Prénom:</label>
+                        <input type="text" id="prenom" name="prenom" required placeholder="Entrer votre prénom" title="Ajouter une prenom valide!!!">
 
                     </li>
 
 
                     <!--Inscrire Telephone-->
                     <li>
-                        <label for="tel">Téléphone:</label>
-                        <input type="tel" id="tel" name="tel" required placeholder="123-123-1234"
+                        <label for="tel">*Téléphone:</label>
+                        <input type="tel" id="tel" name="tel" required placeholder="123-123-1234" title="Votre numero n'est pas valide!!!"
                                pattern="^\(?\d{3}\)?(-| )?\d{3}(-| )?\d{4}$">
                     </li>
 
@@ -77,8 +77,8 @@
                     <!--Inscrire Courriel-->
                     <li>
 
-                        <label for="email">Courriel:</label>
-                        <input type="email" id="email" name="email" required placeholder="adresse@email.com">
+                        <label for="email">*Courriel:</label>
+                        <input type="email" id="email" name="email" required placeholder="adresse@email.com" title="Votre courriel n'est pas valide!!!">
 
                     </li>
 
@@ -98,7 +98,7 @@
 
                     <li>
 
-                        <label for="age">Age:</label>
+                        <label for="age">*Age:</label>
                         <input type="number" id="age" name="age" min="16" max="100" placeholder="(16 min)" required>
 
                     </li>
@@ -107,7 +107,7 @@
 
                     <li>
 
-                        <span>*Quel est le meilleur moment pour vous joindre?</span>
+                        <span>Quel est le meilleur moment pour vous joindre?</span>
                         <label for="avant-midi">AVANT-MIDI</label>
                         <input type="checkbox" id="avant-midi" name="avant-midi"/>
                         <label for="apres-midi">APRÈS-MIDI</label>
@@ -122,9 +122,9 @@
 
                     <li>
 
-                        <label for="Choix_dentrainement">*Choisir un centre</label>
+                        <label for="Choix_dentrainement">Choisir un centre</label>
                         <input list="entrainements" type="text" id="Choix_dentrainement"
-                               placeholder="Selectionner votre centre" required>
+                               placeholder="Selectionner votre centre" >
                         <datalist id="entrainements">
                             <option>Mascouche</option>
                             <option>Laval</option>
