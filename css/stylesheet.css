@@ -927,7 +927,7 @@ text-align: center;
 }
 
 .products p {
-    font-size: 12px;
+    font-size: 85%;
 }
 
 
@@ -1314,6 +1314,8 @@ margin: 0 auto}
 
     .products {
         width: 90%;
+        height: 20%;
+        margin: 0 7% 3% 7%;
     }
 
     .products:hover {
@@ -1321,7 +1323,24 @@ margin: 0 auto}
         transform: none;
     }
 
-/********************* MOBILE PRODUIT ********************************/
+
+    #boutique {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #boutique img {
+        /*height: 150px;*/
+        width: 25%;
+        float: left;
+    }
+
+
+
+
+
+    /********************* MOBILE PRODUIT ********************************/
  #produit {
     font-size: 80%;
  }
