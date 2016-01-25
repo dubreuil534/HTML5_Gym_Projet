@@ -1459,7 +1459,10 @@ margin: 0 auto}
     }
 
 
-/********************* MOBILE PRODUIT ********************************/
+
+
+
+  /********************* MOBILE PRODUIT ********************************/
  #produit {
     font-size: 80%;
  }
@@ -1500,8 +1503,12 @@ margin: 0 auto}
       margin-left: 0%;
       width: 100%;}
 
-    .media_sociaux{
-        width: 100%;}
+    .media_sociaux {
+        width: 100%;
+    }
+    #googleMapdiv{
+        display: none;
+    }
 
 
 }
