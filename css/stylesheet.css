@@ -747,7 +747,7 @@ footer {
 
 .subtitle {
     color: white;
-    font-size: 24px;
+    font-size: 125%
 
 }
 
@@ -1259,6 +1259,9 @@ footer ul li ul {
 
     .explorer {
         margin-left: 10%;
+    }
+    footer p {
+        display: none;
     }
 
 
