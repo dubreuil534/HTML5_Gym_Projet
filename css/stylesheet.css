@@ -398,7 +398,7 @@ main section p:last-of-type {
     padding-left: 10%;
     font-family: Georgia;
     width: 30%;
-    font-size: large;
+    font-size:100%;
     -moz-text-shadow: 1px 1px white;
     -webkit-text-shadow: 1px 1px white;
     -ms-text-shadow: 1px 1px white;
@@ -480,12 +480,12 @@ main section article h4:hover {
     text-align: center;
 }
 
-#galerie h2:hover {
+/*#galerie h2:hover {
     color: blue;
     transform: scale(2);
-    /* transform: translate(100px);*/
+    !* transform: translate(100px);*!
     transition: all 2s ease;
-}
+}*/
 
 #galerie ul {
     list-style: none;
@@ -508,12 +508,6 @@ main section article h4:hover {
     border-radius: 5px;
 
 }
-
-/*#galerie ul li img:hover {
-    transform: scale(1.5);
-    transition: all 1s ease-in;
-}*/
-
 #galerie ul li {
     margin: 0 auto;
 }
@@ -590,6 +584,63 @@ main section article h4:hover {
     clear: both; /*on annule l'effet de float*/
     display: block; /*cela permet d'avoir un retour à la ligne*/
 
+}
+/***********TABLET**********/
+@media only screen and (max-width:950px){
+
+    /*largeur d'1 colonne pour tablet*/
+
+    .col-m-1{
+        width:8.33%;
+    }
+    /*largeur de 2 colonnes pour tablet*/
+    .col-m-2{
+        width:16.66%;
+    }
+    /*largeur de 3 colonnes pour tablet*/
+    .col-m-3 {width: 25%;}
+
+    /*largeur de 4 colonnes pour tablet*/
+    .col-m-4 {width: 33.33%;}
+
+    /*largeur de 5 colonnes pour tablet*/
+    .col-m-5 {width: 41.66%;}
+
+    /*largeur de 6 colonnes pour tablet*/
+    .col-m-6 {width: 50%;}
+
+    /*largeur de 7 colonnes pour tablet*/
+    .col-m-7 {width: 58.33%;}
+
+    /*largeur de 8 colonnes pour tablet*/
+    .col-m-8 {width: 66.66%;}
+
+    /*largeur de 9 colonnes pour tablet*/
+    .col-m-9 {width: 75%;}
+
+    /*largeur de 10 colonnes pour tablet*/
+    .col-m-10{
+        width:83.33%;
+    }
+
+    /*largeur de 11 colonnes pour tablet*/
+    .col-m-11{
+        width:91.66%;
+    }
+
+    /*largeur de 12 colonnes pour tablet*/
+    .col-m-12{
+        width:100%;
+    }
+
+}
+/***********MOBILE**********/
+@media only screen and (max-width:640px){
+
+    [class*="col-"]{
+        width:100%;
+        padding:0 0;
+    }
 }
 /*debut zoom*/
 /* The Modal (background) */
@@ -725,6 +776,25 @@ footer p {
 
 /*******FIN FOOTER******/
 
+/*******Debut FOOTER Mobile****/
+
+#mobile {
+    display: none;
+}
+
+#mobile ul li{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+
+#mobile ul li img {
+    width: 33.3%;
+}
+
+
 /********** FORMULAIRE **********************************/
 
 #wrapper-form main {
@@ -794,6 +864,7 @@ button {
     display: inline-block;
 }
 
+
 #wrapper-form form {
     width: 50%;
     display: inline-block;
@@ -807,6 +878,7 @@ article {
 
 #googleMapdiv {
     display: inline-block;
+    width: 25%;
 }
 
 #wrapper-form label[for*="age"]{
@@ -1159,6 +1231,21 @@ text-align: center;
         padding-right: 40%;
         font-size: 80%;
     }
+footer ul li ul {
+
+}
+
+/*******************   TABLETTE FOOTER   *****************/
+    .contact {
+        margin-left: 1%;
+
+    }
+
+    .explorer {
+        margin-left: 10%;
+    }
+
+
 
     /********** TABLETTE BOUTIQUE *******************************/
 
@@ -1242,16 +1329,31 @@ text-align: center;
         margin: 0 auto;
     }
 
- }
+
+/********************** TABLETTE Training *****************/
+
+    .top_populaire{
+        margin-bottom: 10%;
+    }
+.top_populaire img{
+    display: none;
+
+}
+
+    /********************** TABLETTE Formulaire *****************/
+
+#googleMapdiv{
+    display: block;
+}
 
 
 
-
+}
 
 /********** POUR MOBILES *************************/
 @media only screen and (max-width: 640px) {
 
-    /******************* MOBILE   HEADER   *****************/
+ /******************* MOBILE   HEADER   *****************/
 
 nav{
 width: 100%;
@@ -1293,6 +1395,16 @@ margin: 0 auto}
     header div:first-of-type p{
         padding-right: 0;
     }
+    /******************* MOBILE   Footer   *****************/
+    footer:last-of-type{
+        display: none;
+    }
+
+    #mobile{
+        display: block;
+    }
+
+
 /************* DROPDOWN MENUE **********************/
     .onclick-menu {
         position: relative;
@@ -1353,5 +1465,21 @@ margin: 0 auto}
     #produit table {
         width: 100%;
     }
+
+ /********************* MOBILE Formulaire ********************************/
+  h5 {
+     font-size:100%
+ }
+
+  .contact {
+      width: 100%;
+  }
+  .explorer{
+      margin-left: 0%;
+      width: 100%;}
+
+    .media_sociaux{
+        width: 100%;}
+
 
 }
