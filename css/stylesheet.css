@@ -1313,6 +1313,10 @@ footer ul li ul {
 
 
     /********************** TABLETTE PRODUIT *****************/
+
+    #wrapper-form form{
+        width: 80%;
+    }
     #produit > div:first-of-type {
         width: 50%;
         margin: 2% 25% 0 25%;
