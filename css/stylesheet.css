@@ -1532,6 +1532,13 @@ margin: 0 auto}
     #googleMapdiv{
         display: none;
     }
-
-
+    fieldset ul li {
+        width: 100%;
+    }
+    #wrapper-form label[for*="homme"] {
+        width: 15%;
+    }
+    #wrapper-form label[for*="femme"] {
+        width: 15%;
+    }
 }
