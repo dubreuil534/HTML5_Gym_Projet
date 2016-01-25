@@ -464,22 +464,7 @@ main section article h4:hover {
     40% {left:-2400px;}
     60% {left:-3600px;}
     80%{left:-4800px; }
-    0% {
-        left: 0px;
-    }
-    20% {
-        left: -1200px;
-    }
-    40% {
-        left: -2400px;
-    }
-
 }
-
-
-
-
-
 /*fin slider*/
 
 /*******FIN DE L'INDEX******/
@@ -524,10 +509,10 @@ main section article h4:hover {
 
 }
 
-#galerie ul li img:hover {
+/*#galerie ul li img:hover {
     transform: scale(1.5);
     transition: all 1s ease-in;
-}
+}*/
 
 #galerie ul li {
     margin: 0 auto;
@@ -606,6 +591,83 @@ main section article h4:hover {
     display: block; /*cela permet d'avoir un retour à la ligne*/
 
 }
+/*debut zoom*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(211,211,211); /* Fallback color */
+    background-color: rgba(211,211,211,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.2s;
+    animation-name: zoom;
+    animation-duration: 0.2s;
+}
+
+@-webkit-keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.1)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Clear Floats */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;}
+/*fin zoom*/
+
 
 /*******FIN GALERIE******/
 /*******DEBUT FOOTER******/
