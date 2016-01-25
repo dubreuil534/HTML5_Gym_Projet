@@ -832,6 +832,12 @@ article {
     width: 15%;
 }
 
+#commentaire {
+    border-radius: 7px;
+}
+
+
+
 /********* CSS Training ***************/
 
 .centervideo {
@@ -875,7 +881,8 @@ article {
 }
 .centervideo img {
     margin-left: 1%;
-    width: 25%;
+    width: 28%;
+    vertical-align: top;
 }
 
 /******************* BOUTIQUE **********************************/
@@ -987,14 +994,14 @@ text-align: center;
 
 
 #produit h3 {
-    font-size: 30px;
+    font-size: 200%;
 }
 
 #produit > div > div:first-of-type h3 {
     color: #551a8b;
 }
 
-#produit>div:first-of-type {
+#produit > div:first-of-type {
     background-color: white;
     width: 32%;
     border-radius: 20px;
@@ -1017,7 +1024,7 @@ text-align: center;
 }
 
 #produit strong {
-    font-size: 13px;
+    font-size: 90%;
 }
 
 #produit div div:first-of-type {
@@ -1027,18 +1034,18 @@ text-align: center;
 
 #produit div div:last-of-type > h3 {
     display: inline;
-    width: 50px;
+    /*width: 50px;*/
 }
 
 #produit div div:last-of-type > h2 {
     display: inline;
-    width: 50px;
-    margin-left: 30px;
+   /* width: 50px;*/
+    margin-left: 8%;
     color: red;
 }
 
 #produit table {
-    /*line-height: normal;*/
+
     border-collapse: collapse;
 
     width: 90%;
@@ -1049,7 +1056,7 @@ text-align: center;
 #produit table tr td {
     /* border: 1px solid black;*/
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 85%;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -1073,4 +1080,259 @@ text-align: center;
 
 #produit tr:nth-child(even):hover {
     background: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************************************************************************/
+/***************   MEDIA QUERIES   ****************************************/
+/*************************************************************************************************************************/
+
+@media only screen and (max-width: 950px) {
+
+
+    /*******************   TABLETTE HEADER   *****************/
+    nav ul {
+        display: inline-block;
+        width: 90%;
+        text-align: center;
+        padding: 0;
+      }
+
+    nav li {
+        float: none;
+        display: inline-block;
+        margin: 0 3.75% 0 3.75%;
+        font-size: 100% ;
+        padding: 1%;
+    }
+
+    nav {
+        padding-top: 5px;
+        width: 88%;
+        text-align: center;
+    }
+
+
+    header div:first-of-type {
+        width: 100%;
+        text-align: right;
+        display: block;
+    }
+
+    header div:last-of-type {
+        letter-spacing: 3px;
+        word-spacing: 5px;
+        font-size: 80%;
+        padding-top: 50px;
+
+    }
+
+    header form {
+        display: inline-block;
+        width: 50%;
+    }
+
+    header div:first-of-type input {
+        width: 70%;
+    }
+
+    header div:first-of-type p{
+      display: inline-block;
+        padding-right: 40%;
+        font-size: 80%;
+    }
+
+    /********** TABLETTE BOUTIQUE *******************************/
+
+    #boutique {
+        width: 95%;
+
+    }
+
+    #boutique > div h2 {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+
+    #boutique img {
+        /*height: 150px;*/
+        width: 65%;
+    }
+
+
+    .products {
+        background-color: white;
+        width: 25%;
+        margin: 0 2.33% 2.33% 2.33%;
+        text-align: center;
+        padding: 1%;
+        height: 300px;
+        display: inline-block;
+        border-radius: 7px;
+        /* border: 1px solid black;*/
+    }
+
+    .products:hover {
+        transform: scale(1.4);
+        transition: all 0.5s ease-in;
+    }
+
+    .products p, .products h3 {
+        text-align: left;
+        margin: 10px 0 10px 0;
+    }
+
+    .products p {
+        font-size: 12px;
+    }
+
+
+
+    /********************** TABLETTE PRODUIT *****************/
+    #produit > div:first-of-type {
+        width: 50%;
+        margin: 2% 25% 0 25%;
+        border-radius: 20px;
+        padding-top: 20px;
+    }
+
+    #produit img {
+        width: 90%;
+    }
+    #produit div {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    #produit h3 {
+        margin-top: 1%;
+    }
+
+#produit p {
+    width: 100%;
+}
+
+    #produit div div:first-of-type {
+        display: inline-block;
+        width: 100%;
+    }
+
+
+    #produit table {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+ }
+
+
+
+
+
+/********** POUR MOBILES *************************/
+@media only screen and (max-width: 640px) {
+
+    /******************* MOBILE   HEADER   *****************/
+
+nav{
+width: 100%;
+padding: 0 auto;
+margin: 0 auto}
+
+    nav ul{
+        width: 100%;
+    display: block;
+    }
+
+    nav li{
+        padding: 0 auto;
+        margin: 0 auto;
+        width: 100%;
+    float: none;
+    text-align: center;
+}
+
+    header>a img {
+        display: none;
+    }
+
+    header div:last-of-type {
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        font-size: 76%;
+    }
+
+    header form {
+        width: 84%;
+        padding-top: 5px;
+    }
+
+    header div:first-of-type input {
+        width: 88%;
+    }
+
+    header div:first-of-type p{
+        padding-right: 0;
+    }
+/************* DROPDOWN MENUE **********************/
+    .onclick-menu {
+        position: relative;
+        display: inline-block;
+    }
+    .onclick-menu:before {
+        content: "Menue";
+    }
+    .onclick-menu:focus .onclick-menu-content {
+        display: block;
+    }
+    .onclick-menu-content {
+        display: none;
+    }
+
+    /**********************************************************
+
+/******************** MOBILE BOUTIQUE ****************************************/
+
+    .products {
+        width: 90%;
+    }
+
+    .products:hover {
+        transition: none;
+        transform: none;
+    }
+
+/********************* MOBILE PRODUIT ********************************/
+ #produit {
+    font-size: 80%;
+ }
+
+    #produit h3 {
+        font-size: 110%;
+
+}
+
+    #produit table {
+        width: 100%;
+    }
+
 }
