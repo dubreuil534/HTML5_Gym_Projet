@@ -1011,7 +1011,7 @@ text-align: center;
 }
 
 .products p {
-    font-size: 12px;
+    font-size: 85%;
 }
 
 
@@ -1343,14 +1343,24 @@ footer ul li ul {
 
 
 /********************** TABLETTE Training *****************/
-
-    .top_populaire{
+.top_populaire{
         margin-bottom: 10%;
     }
 .top_populaire img{
     display: none;
 
 }
+.topcategories{
+    display: none;
+}
+
+.centervideo img {
+    display: none;
+}
+
+
+
+
 
     /********************** TABLETTE Formulaire *****************/
 
@@ -1438,12 +1448,28 @@ margin: 0 auto}
 
     .products {
         width: 90%;
+        height: 20%;
+        margin: 0 7% 3% 7%;
     }
 
     .products:hover {
         transition: none;
         transform: none;
     }
+
+
+    #boutique {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #boutique img {
+        /*height: 150px;*/
+        width: 25%;
+        float: left;
+    }
+
 
 /********************* MOBILE PRODUIT ********************************/
  #produit {
@@ -1459,9 +1485,24 @@ margin: 0 auto}
         width: 100%;
     }
 
+/********************* MOBILE Training ********************************/
+
+    .centervideo video {
+        width: 100%;
+    }
+    .sectionvideo{
+        width: 90%;
+    }
+    .videoscategories{
+        width: 100%;
+    }
+
+
+
+
  /********************* MOBILE Formulaire ********************************/
   h5 {
-     font-size:100%
+     font-size:100%;
  }
 
   .contact {
