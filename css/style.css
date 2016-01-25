@@ -1,0 +1,21 @@
+footer {
+    background-color: black;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+
+}
+
+footer ul li {
+    display: inline-block;
+    width: 30%;
+
+}
+p{
+    text-align: center;
+}
+
+.sous-titre{
+    width: 5%;
+    height: 10%;
+}

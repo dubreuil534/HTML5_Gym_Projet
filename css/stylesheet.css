@@ -1504,6 +1504,10 @@ margin: 0 auto}
 
 /********************* MOBILE Training ********************************/
 
+    .centervideo {
+        margin-left: 0%;
+    }
+
     .centervideo video {
         width: 100%;
     }
