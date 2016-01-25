@@ -466,6 +466,31 @@ main section article h4:hover {
     80%{left:-4800px; }
 }
 /*fin slider*/
+/***********TABLET**********/
+@media only screen and (max-width:950px){
+  main{
+      width: 950px;
+  }
+}
+/***********MOBILE**********/
+@media only screen and (max-width:640px){
+    main{
+        width: 100%;
+    }
+    #slider{
+        display: none;
+    }
+    main section article{
+        display: block;
+        width: 100%;
+    }
+    main section button{
+        margin-top:10%;
+    }
+    main section p:last-of-type {
+        display: none;
+    }
+}
 
 /*******FIN DE L'INDEX******/
 
@@ -475,22 +500,9 @@ main section article h4:hover {
     margin-left: 1%;
     margin-top: 2%;
 }
-
-#galerie h2 {
-    text-align: center;
-}
-
-/*#galerie h2:hover {
-    color: blue;
-    transform: scale(2);
-    !* transform: translate(100px);*!
-    transition: all 2s ease;
-}*/
-
 #galerie ul {
     list-style: none;
 }
-
 #galerie ul li img {
     width: 320px;
     height: 220px;
