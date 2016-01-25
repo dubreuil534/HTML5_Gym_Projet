@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> Galerie </title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css"/>
 </head>
 <body>
@@ -36,47 +37,82 @@
 
 <main id="galerie">
 
-    <h2> VISITE LIMBO </h2>
+    <h3 class="marquee"><span> VISITE LIMBO </span>    </h3>
 
     <ul class="row">
         <li>
-            <img src="images/galerie/0.jpg" alt="img0" class="col-3">
+            <img src="images/galerie/0.jpg" alt="img0" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/1.jpg" alt="img1" class="col-3" >
+            <img src="images/galerie/1.jpg" alt="img1" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/2.jpg" alt="img2" class="col-3" >
+            <img src="images/galerie/2.jpg" alt="img2" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/3.jpg" alt="img3" class="col-3" >
+            <img src="images/galerie/3.jpg" alt="img3" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/4.jpg" alt="img4" class="col-3" >
+            <img src="images/galerie/4.jpg" alt="img4" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/5.jpg" alt="img5" class="col-3" >
+            <img src="images/galerie/5.jpg" alt="img5" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/6.jpg" alt="img6" class="col-3" >
+            <img src="images/galerie/6.jpg" alt="img6" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/7.jpg" alt="img7" class="col-3" >
+            <img src="images/galerie/7.jpg" alt="img7" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/8.jpg" alt="img8" class="col-3" >
+            <img src="images/galerie/8.jpg" alt="img8" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/9.jpg" alt="img9" class="col-3" >
+            <img src="images/galerie/9.jpg" alt="img9" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/10.jpg" alt="img10" class="col-3" >
+            <img src="images/galerie/10.jpg" alt="img10" class="col-3 col-m-4">
         </li><!--
         --><li>
-            <img src="images/galerie/11.jpg" alt="img11" class="col-3" >
+            <img src="images/galerie/11.jpg" alt="img11" class="col-3 col-m-4">
         </li>
 
     </ul>
+    <div class="clearfix"></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">×</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Get all images and insert the clicked image inside the modal
+        // Get the content of the image description and insert it inside the modal image caption
+        var images = document.getElementsByTagName('img');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var i;
+        for (i = 0; i < images.length; i++) {
+            images[i].onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.nextElementSibling.innerHTML;
+            }
+        }
+    </script>
 
 </main>
 
