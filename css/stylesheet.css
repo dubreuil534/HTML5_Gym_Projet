@@ -608,6 +608,7 @@ main section article h4:hover {
 /*******FIN GALERIE******/
 /*******DEBUT FOOTER******/
 
+
 footer {
     background-color: black;
     height: 20%;
@@ -660,6 +661,25 @@ footer p {
 
 /*******FIN FOOTER******/
 
+/*******Debut FOOTER Mobile****/
+
+#mobile {
+    display: none;
+}
+
+#mobile ul li{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin-top: 3%;
+}
+
+
+#mobile ul li img {
+    width: 33.3%;
+}
+
+
 /********** FORMULAIRE **********************************/
 
 #wrapper-form main {
@@ -696,7 +716,6 @@ fieldset ul li {
     margin-top: 2%;
     margin-bottom: 4%;
     text-align: center;
-    text-align: center;
 
 }
 
@@ -727,6 +746,7 @@ fieldset ul {
     display: inline-block;
 }
 
+
 #wrapper-form form {
     width: 50%;
     display: inline-block;
@@ -740,6 +760,7 @@ article {
 
 #googleMapdiv {
     display: inline-block;
+    width: 25%;
 }
 
 #wrapper-form label[for*="age"] {
@@ -1092,6 +1113,21 @@ article {
         padding-right: 40%;
         font-size: 80%;
     }
+footer ul li ul {
+
+}
+
+/*******************   TABLETTE FOOTER   *****************/
+    .contact {
+        margin-left: 1%;
+
+    }
+
+    .explorer {
+        margin-left: 10%;
+    }
+
+
 
 
 
@@ -1131,16 +1167,31 @@ article {
         margin: 0 auto;
     }
 
- }
+
+/********************** TABLETTE Training *****************/
+
+    .top_populaire{
+        margin-bottom: 10%;
+    }
+.top_populaire img{
+    display: none;
+
+}
+
+    /********************** TABLETTE Formulaire *****************/
+
+#googleMapdiv{
+    display: block;
+}
 
 
 
-
+}
 
 /********** POUR MOBILES *************************/
 @media only screen and (max-width: 640px) {
 
-    /******************* MOBILE   HEADER   *****************/
+ /******************* MOBILE   HEADER   *****************/
 
 nav{
 width: 100%;
@@ -1182,6 +1233,16 @@ margin: 0 auto}
     header div:first-of-type p{
         padding-right: 0;
     }
+    /******************* MOBILE   Footer   *****************/
+    footer:last-of-type{
+        display: none;
+    }
+
+    #mobile{
+        display: block;
+    }
+
+
 /************* DROPDOWN MENUE **********************/
     .onclick-menu {
         position: relative;
@@ -1212,5 +1273,21 @@ margin: 0 auto}
     #produit table {
         width: 100%;
     }
+
+ /********************* MOBILE Formulaire ********************************/
+  h5 {
+     font-size:100%
+ }
+
+  .contact {
+      width: 100%;
+  }
+  .explorer{
+      margin-left: 0%;
+      width: 100%;}
+
+    .media_sociaux{
+        width: 100%;}
+
 
 }
