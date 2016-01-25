@@ -1280,14 +1280,24 @@ footer ul li ul {
 
 
 /********************** TABLETTE Training *****************/
-
-    .top_populaire{
+.top_populaire{
         margin-bottom: 10%;
     }
 .top_populaire img{
     display: none;
 
 }
+.topcategories{
+    display: none;
+}
+
+.centervideo img {
+    display: none;
+}
+
+
+
+
 
     /********************** TABLETTE Formulaire *****************/
 
@@ -1396,9 +1406,24 @@ margin: 0 auto}
         width: 100%;
     }
 
+/********************* MOBILE Training ********************************/
+
+    .centervideo video {
+        width: 100%;
+    }
+    .sectionvideo{
+        width: 90%;
+    }
+    .videoscategories{
+        width: 100%;
+    }
+
+
+
+
  /********************* MOBILE Formulaire ********************************/
   h5 {
-     font-size:100%
+     font-size:100%;
  }
 
   .contact {
