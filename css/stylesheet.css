@@ -11,7 +11,7 @@
     font-weight: normal;
     font-style: normal;
 
-}
+}   /***************** FONTS ************************************/
 
 @font-face {
     font-family: 'comfortaaregular';
@@ -31,165 +31,27 @@ main, nav, section { display: block; }
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'comfortaabold';
-}
+}  /********************* FIN de FONTS *************************************/
 
 h5 {
     font-size:100%;
 }
 
 
-/********************* FIN de FONTS *************************************/
 
+/*****************************  CODE BASIQUE + BODY *************************************************************/
 *{
     box-sizing: border-box;
 }
-
-/****** ELEMENT ANIMATION **********************************/
-.element-animation {
-    position: absolute;
-    top:100px;
-    left: 200px;
-    z-index: 20;
-}
-
-.element-animation{
-
-    animation: animationFrames ease-out 0.8s;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
-    animation-fill-mode:forwards; /*when the spec is finished*/
-    -webkit-animation: animationFrames ease-out 0.8s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-transform-origin: 50% 50%;
-    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
-    -moz-animation: animationFrames ease-out 0.8s;
-    -moz-animation-iteration-count: 1;
-    -moz-transform-origin: 50% 50%;
-    -moz-animation-fill-mode:forwards; /*FF 5+*/
-    -o-animation: animationFrames ease-out 0.8s;
-    -o-animation-iteration-count: 1;
-    -o-transform-origin: 50% 50%;
-    -o-animation-fill-mode:forwards; /*Not implemented yet*/
-    -ms-animation: animationFrames ease-out 0.8s;
-    -ms-animation-iteration-count: 1;
-    -ms-transform-origin: 50% 50%;
-    -ms-animation-fill-mode:forwards; /*IE 10+*/
-}
-
-@keyframes animationFrames{
-    0% {
-        opacity:0;
-        transform:  translate(1500px,0px)  skewX(-30deg) ;
-    }
-    60% {
-        opacity:1;
-        transform:  translate(1000px,0px)  skewX(30deg) ;
-    }
-    80% {
-        opacity:1;
-        transform:  translate(1000px,0px)  skewX(-15deg) ;
-    }
-    100% {
-        opacity:1;
-        transform:  translate(1000px,0px)  skewX(0deg) ;
-    }
-}
-
-@-moz-keyframes animationFrames{
-    0% {
-        opacity:0;
-        -moz-transform:  translate(1400px,1000px)  skewX(-30deg) ;
-    }
-    60% {
-        opacity:1;
-        -moz-transform:  translate(-40px,0px)  skewX(30deg) ;
-    }
-    80% {
-        opacity:1;
-        -moz-transform:  translate(0px,0px)  skewX(-15deg) ;
-    }
-    100% {
-        opacity:1;
-        -moz-transform:  translate(0px,0px)  skewX(0deg) ;
-    }
-}
-
-@-webkit-keyframes animationFrames {
-    0% {
-        opacity:0;
-        -webkit-transform:  translate(1400px,1000px)  skewX(-30deg) ;
-    }
-    60% {
-        opacity:1;
-        -webkit-transform:  translate(-40px,0px)  skewX(30deg) ;
-    }
-    80% {
-        opacity:1;
-        -webkit-transform:  translate(0px,0px)  skewX(-15deg) ;
-    }
-    100% {
-        opacity:1;
-        -webkit-transform:  translate(0px,0px)  skewX(0deg) ;
-    }
-}
-
-@-o-keyframes animationFrames {
-    0% {
-        opacity:0;
-        -o-transform:  translate(1400px,1000px)  skewX(-30deg) ;
-    }
-    60% {
-        opacity:1;
-        -o-transform:  translate(-40px,0px)  skewX(30deg) ;
-    }
-    80% {
-        opacity:1;
-        -o-transform:  translate(0px,0px)  skewX(-15deg) ;
-    }
-    100% {
-        opacity:1;
-        -o-transform:  translate(0px,0px)  skewX(0deg) ;
-    }
-}
-
-@-ms-keyframes animationFrames {
-    0% {
-        opacity:0;
-        -ms-transform:  translate(1400px,1000px)  skewX(-30deg) ;
-    }
-    60% {
-        opacity:1;
-        -ms-transform:  translate(-40px,0px)  skewX(30deg) ;
-    }
-    80% {
-        opacity:1;
-        -ms-transform:  translate(0px,0px)  skewX(-15deg) ;
-    }
-    100% {
-        opacity:1;
-        -ms-transform:  translate(0px,0px)  skewX(0deg) ;
-    }
-}
-
-/****** FIN d'ELEMENT ANIMATION***************************/
-
-
-
 
 aside, div, section, header, footer, nav {
     display: block;
 }
 
-/*degradé de fond du body*/
-
-/*degradé du fond du body*/
-
 body {
     font-family: 'comfortaaregular';
-    /*font-family: "Arial", Arial, sans-serif;*/
     font-size: 15px;
     margin: 0 auto;
-
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
     background: #eeeeee; /* Old browsers */
     background: -moz-radial-gradient(center, ellipse cover, #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
@@ -203,7 +65,7 @@ main {
     padding: 0;
 }
 
-/****** HEADER *****************/
+/************************************************* HEADER ************************************************/
 /* unvisited link */
  header a:link {
     color: #000000;
@@ -239,7 +101,6 @@ header img {
 
 nav ul {
     list-style: none;
-
 }
 
 nav li {
@@ -302,7 +163,7 @@ header div:first-of-type form img {
     width: 20px;
 }
 
-/****END HEADER *******************/
+/**********************************************************END HEADER ***************************************/
 
 /***** DEBUT DE L'INDEX *******/
 
@@ -473,40 +334,20 @@ main section article h4:hover {
     80%{left:-4800px; }
 }
 /*fin slider*/
-/***********TABLET**********/
-@media only screen and (max-width:950px){
-  main{
-      width: 950px;
-  }
-}
-/***********MOBILE**********/
-@media only screen and (max-width:640px){
-    main{
-        width: 100%;
-    }
-    #slider{
-        display: none;
-    }
-    main section article{
-        display: block;
-        width: 100%;
-    }
-    main section button{
-        margin-top:10%;
-    }
-    main section p:last-of-type {
-        display: none;
-    }
-}
 
-/*******FIN DE L'INDEX******/
+/***********************************************FIN DE L'INDEX*************************************************/
 
-/*******DEBUT GALERIE******/
+/************************************************DEBUT GALERIE**********************************************/
 
 #galerie {
     margin-left: 1%;
     margin-top: 2%;
 }
+
+#galerie h2 {
+    text-align: center;
+}
+
 #galerie ul {
     list-style: none;
 }
@@ -604,63 +445,7 @@ main section article h4:hover {
     display: block; /*cela permet d'avoir un retour à la ligne*/
 
 }
-/***********TABLET**********/
-@media only screen and (max-width:950px){
 
-    /*largeur d'1 colonne pour tablet*/
-
-    .col-m-1{
-        width:8.33%;
-    }
-    /*largeur de 2 colonnes pour tablet*/
-    .col-m-2{
-        width:16.66%;
-    }
-    /*largeur de 3 colonnes pour tablet*/
-    .col-m-3 {width: 25%;}
-
-    /*largeur de 4 colonnes pour tablet*/
-    .col-m-4 {width: 33.33%;}
-
-    /*largeur de 5 colonnes pour tablet*/
-    .col-m-5 {width: 41.66%;}
-
-    /*largeur de 6 colonnes pour tablet*/
-    .col-m-6 {width: 50%;}
-
-    /*largeur de 7 colonnes pour tablet*/
-    .col-m-7 {width: 58.33%;}
-
-    /*largeur de 8 colonnes pour tablet*/
-    .col-m-8 {width: 66.66%;}
-
-    /*largeur de 9 colonnes pour tablet*/
-    .col-m-9 {width: 75%;}
-
-    /*largeur de 10 colonnes pour tablet*/
-    .col-m-10{
-        width:83.33%;
-    }
-
-    /*largeur de 11 colonnes pour tablet*/
-    .col-m-11{
-        width:91.66%;
-    }
-
-    /*largeur de 12 colonnes pour tablet*/
-    .col-m-12{
-        width:100%;
-    }
-
-}
-/***********MOBILE**********/
-@media only screen and (max-width:640px){
-
-    [class*="col-"]{
-        width:100%;
-        padding:0 0;
-    }
-}
 /*debut zoom*/
 /* The Modal (background) */
 .modal {
@@ -1258,9 +1043,18 @@ text-align: center;
         padding-right: 40%;
         font-size: 80%;
     }
-footer ul li ul {
 
-}
+    main{
+        width: 100%;
+    }
+
+    #slider {
+        width: 100%;
+    }
+
+    main section p:last-of-type {
+        display: none ;
+    }
 
 /*******************   TABLETTE FOOTER   *****************/
     .contact {
@@ -1275,6 +1069,55 @@ footer ul li ul {
         display: none;
     }
 
+
+
+    /*****************************************TABLET   GALERIE ***************************/
+
+
+    /*largeur d'1 colonne pour tablet*/
+
+    .col-m-1{
+        width:8.33%;
+    }
+    /*largeur de 2 colonnes pour tablet*/
+    .col-m-2{
+        width:16.66%;
+    }
+    /*largeur de 3 colonnes pour tablet*/
+    .col-m-3 {width: 25%;}
+
+    /*largeur de 4 colonnes pour tablet*/
+    .col-m-4 {width: 33.33%;}
+
+    /*largeur de 5 colonnes pour tablet*/
+    .col-m-5 {width: 41.66%;}
+
+    /*largeur de 6 colonnes pour tablet*/
+    .col-m-6 {width: 50%;}
+
+    /*largeur de 7 colonnes pour tablet*/
+    .col-m-7 {width: 58.33%;}
+
+    /*largeur de 8 colonnes pour tablet*/
+    .col-m-8 {width: 66.66%;}
+
+    /*largeur de 9 colonnes pour tablet*/
+    .col-m-9 {width: 75%;}
+
+    /*largeur de 10 colonnes pour tablet*/
+    .col-m-10{
+        width:83.33%;
+    }
+
+    /*largeur de 11 colonnes pour tablet*/
+    .col-m-11{
+        width:91.66%;
+    }
+
+    /*largeur de 12 colonnes pour tablet*/
+    .col-m-12{
+        width:100%;
+    }
 
 
     /********** TABLETTE BOUTIQUE *******************************/
@@ -1442,6 +1285,51 @@ margin: 0 auto}
     header div:first-of-type p{
         padding-right: 0;
     }
+
+    /***********************  MOBILE INDEX ************************/
+    main{
+        width: 100%;
+    }
+    #slider{
+        display: none;
+    }
+    main section article{
+        display: block;
+        width: 100%;
+    }
+    main section button{
+        margin-top:17%;
+        font-size: 70%;
+    }
+    main section p:last-of-type {
+        display: none;
+    }
+
+    main section:last-of-type span{
+        font-size: 100%;
+    }
+
+    main section:last-of-type img {
+        display:none;
+    }
+
+    /*************************************************MOBILE GALERIE ***************************/
+
+
+    [class*="col-"]{
+        width:100%;
+        padding:0 0;
+    }
+
+    .row {
+        padding: 0;
+    }
+
+    .row li{
+        width: 90%;
+
+    }
+
     /******************* MOBILE   Footer   *****************/
     footer:last-of-type{
         display: none;
