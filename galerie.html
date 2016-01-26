@@ -14,8 +14,8 @@
 <body>
 
 <header>
-    <a href="index.html"><img src="images/logogym2.gif" alt="logo" id="logo"></a><!-------------
-           --->
+    <a href="index.html"><img src="images/logogym2.gif" alt="logo" id="logo"></a><!--
+           -->
     <nav tabindex="0" class="onclick-menu">
         <ul class="onclick-menu-content">
             <li ><a href="galerie.html" class="dropdown-content"> Galerie </a></li>
@@ -24,7 +24,7 @@
             <li ><a href="formulaire.html" class="dropdown-content"> Contact </a></li>
         </ul>
 
-    </nav><!-------------------------
+    </nav><!--
             -->
     <div>
         <p id="lang"><span><a href="#">Eng</a></span>/<span><a href="#">Fr</a></span></p>
@@ -88,7 +88,8 @@
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <span class="close">×</span>
-        <img class="modal-content" id="img01">
+        <!-- Code trouvé sur w3shcool-->
+        <img class="modal-content" src="images/logogym2.gif" alt="" id="img01">
         <div id="caption"></div>
     </div>
     <script>
@@ -101,7 +102,7 @@
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             modal.style.display = "none";
-        }
+        };
 
         // Get all images and insert the clicked image inside the modal
         // Get the content of the image description and insert it inside the modal image caption
