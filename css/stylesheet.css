@@ -966,7 +966,7 @@ article {
 
 }
 
-.topcategories {
+aside {
     width: 20%;
     display: inline-block;
     vertical-align: top;
@@ -1366,7 +1366,7 @@ footer ul li ul {
     display: none;
 
 }
-.topcategories{
+aside{
     display: none;
 }
 
