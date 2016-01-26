@@ -816,12 +816,11 @@ footer p {
 
 /********** FORMULAIRE **********************************/
 
-input:required:invalid, input:focus:invalid {
+input:required:invalid {
     border: solid red 1px;
-
 }
 
-input:valid {
+input:required:valid {
     border: 1px solid green;
 }
 
